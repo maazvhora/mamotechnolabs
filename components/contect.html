@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamo Technolabs - Innovations Unlimited</title>
+    <link rel="stylesheet" href="contect.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <!-- Container holding the image and text side by side -->
+        <div class="brand-container">
+            <img src="./mamo-logo.png" alt="Mamo Techno Labs Logo" class="brand-logo">
+            <div class="brand-text">
+                <span class="sub-title">Mamo</span>
+                <h1 class="main-title">TechnoLabs</h1>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="#" id="courses-btn" class="nav-link">COURSES <i class="fa-solid fa-chevron-down"></i></a>
+            <a href="./about.html">ABOUT US</a>
+
+            <!-- Student Corner Dropdown -->
+            <div class="dropdown">
+                <a href="#" class="nav-link">STUDENT CORNER <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">IT Internship In Vadodara</a>
+                    <a href="#">Final Year Project Training</a>
+                    <a href="#">Industrial Visit</a>
+                    <a href="#">Student Reviews</a>
+                    <a href="#">Blog</a>
+                    <a href="#">NIOS Learning Centre</a>
+                </div>
+            </div>
+
+            <a href="./placment.html">PLACEMENTS</a>
+            <a href="./contect.html">CONTACT</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="#" class="btn-skill"><i class="fa-solid fa-brain"></i> Skill Test</a>
+            <a href="#" class="btn-hire"><i class="fa-solid fa-magnifying-glass"></i> HIRE FROM US</a>
+        </div>
+    </header>
+
+    <!-- Hero / Banner Section -->
+    <section class="hero-section">
+        <div class="banner-content">
+            <h1>Contact <span class="highlight-text">Us</span></h1>
+        </div>
+    </section>
+
+    <section class="get-in-touch-section">
+        <!-- Section Header -->
+        <div class="touch-header">
+            <h2>Get In Touch Today For <span class="expert-badge">Expert Assistance!</span></h2>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="touch-cards-container">
+            <!-- Card 1: Email -->
+            <div class="touch-card">
+            <div class="icon-circle">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="touch-info">
+                <h3>Email Address</h3>
+                <p>training@vtechlabs.com</p>
+            </div>
+            </div>
+
+            <!-- Card 2: Phone -->
+            <div class="touch-card">
+            <div class="icon-circle">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="touch-info">
+                <h3>Phone Number</h3>
+                <p>+91 94276 02525</p>
+            </div>
+            </div>
+
+            <!-- Card 3: Office Address -->
+            <div class="touch-card">
+            <div class="icon-circle">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="touch-info">
+                <h3>Our Office</h3>
+                <p>801, Ivory Terrace, R.C.Dutt Road, Vadodara-07, Gujarat.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-inquiry-section">
+        <!-- Left Side: Google Map Embed -->
+        <div class="map-container">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.303409444175!2d73.19888377554179!3d22.266493744119447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc5284d11c2af%3A0x2a911801d39003f2!2sMaMo%20TechnoLabs%20LLP%20-%20IT%20Staffing%20%26%20Software%20Development!5e0!3m2!1sen!2sin!4v1790589642576!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <!-- Right Side: Detailed Inquiry Form -->
+        <div class="form-container">
+            <form class="detailed-inquiry-form">
+            <div class="form-row">
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email ID" required />
+            </div>
+
+            <div class="form-row">
+                <input type="tel" placeholder="Contact Number" required />
+                <select required>
+                <option value="" disabled selected>Training/Internship</option>
+                <option value="training">Training</option>
+                <option value="internship">Internship</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <select required>
+                <option value="" disabled selected>Select Technology</option>
+                <option value="python">Python / Data Science</option>
+                <option value="php">PHP / Web Development</option>
+                <option value="digital-marketing">Digital Marketing</option>
+                </select>
+                <input type="text" placeholder="Location/City" required />
+            </div>
+
+            <div class="form-row full-width">
+                <select required>
+                <option value="" disabled selected>How You Heard About Us?</option>
+                <option value="google">Google Search</option>
+                <option value="social">Social Media</option>
+                <option value="friend">Friend / Referral</option>
+                </select>
+            </div>
+
+            <div class="form-row full-width">
+                <textarea placeholder="Comments" rows="4" required></textarea>
+            </div>
+
+            <!-- reCAPTCHA and Submit Button -->
+            <div class="form-bottom-row">
+                <div class="recaptcha-box">
+                <div class="recaptcha-inner">
+                    <input type="checkbox" id="robot-check" />
+                    <label for="robot-check">I'm not a robot</label>
+                </div>
+                <div class="recaptcha-logo">
+                    <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" />
+                    <span>reCAPTCHA</span>
+                </div>
+                </div>
+            </div>
+
+            <div class="submit-btn-wrapper">
+                <button type="submit" class="send-inquiry-btn">SEND INQUIRY</button>
+            </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Column 1: Logo, Copyright, Socials, & QR Code -->
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <span class="v-green">V</span>Tech<span class="labs-white">Labs</span>
+                </div>
+                <p class="copyright-text">© 2026 By VTechLabs</p>
+                <div class="footer-divider"></div>
+
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <!-- Scan and Review QR Code Area -->
+                <div class="qr-section">
+                    <span class="qr-title">Scan And Review</span>
+                    <div class="qr-box">
+                        <!-- Mock QR code image or generated SVG placeholder -->
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://vtechlabs.com" alt="QR Code">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Trending Course Links -->
+            <div class="footer-col">
+                <h3 class="footer-heading">Trending Course</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Prompt Engineering</a></li>
+                    <li><a href="#">Artificial Intelligence</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">UI UX Design</a></li>
+                    <li><a href="#">Data Science</a></li>
+                    <li><a href="#">Automation Testing</a></li>
+                    <li><a href="#">Tableau</a></li>
+                    <li><a href="#">All Courses</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Information Links -->
+            <div class="footer-col">
+                <h3 class="footer-heading">Information</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Hire IT Students</a></li>
+                    <li><a href="#">Corporate Training</a></li>
+                    <li><a href="#">Internship</a></li>
+                    <li><a href="#">Job Consultancy</a></li>
+                    <li><a href="#">Industrial Visit</a></li>
+                    <li><a href="#">Training Infrastructure</a></li>
+                    <li><a href="#">CodeSprint 2024</a></li>
+                    <li><a href="#">Student Testimonials</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Us Details -->
+            <div class="footer-col contact-col">
+                <h3 class="footer-heading">Contact Us</h3>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919427602525">+91 94276 02525</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://whatsapp.com" target="_blank">+91 97254 52141</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:training@vtechlabs.com">training@vtechlabs.com</a>
+                    </li>
+                    <li class="address-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>801, Ivory Terrace,<br>R.C. Dutt Road,<br>Vadodara-07, Gujarat</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
+

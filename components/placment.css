@@ -1,0 +1,1255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bedjana",'Segoe UI';
+}
+
+body {
+    background-color: #0b132b;
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: transparent linear-gradient(248deg, #312393 0%, #1f2740 100%) 0% 0% no-repeat;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* The magic happens here using Flexbox */
+.brand-container {
+    display: flex;
+    align-items: center; /* Aligns text vertically with the center of the image */
+    gap: 15px;           /* Creates space between the image and the text */
+}
+
+.brand-logo {
+    width: 80px;         /* Adjust the size of your image here */
+    height: auto;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column; /* Stack "Mamo" and "Techno Labs" vertically */
+}
+
+.sub-title {
+    color: #2dd4bf;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.main-title {
+    font-size: 32px;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e2e8f0;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4ade80;
+}
+
+.nav-links i {
+    font-size: 11px;
+    margin-left: 4px;
+}
+
+.nav-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn-skill {
+    background: transparent;
+    border: 2px solid #facc15;
+    color: #facc15;
+    padding: 8px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-hire {
+    background: #facc15;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Menu Box with Smooth Animation */
+.dropdown-content {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px); /* Thoda sa niche se slide hote hue aayega */
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 260px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    z-index: 1000;
+    top: 130%;
+    left: 0;
+    padding: 10px 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth duration */
+}
+
+/* Dropdown Links Styling */
+.dropdown-content a {
+    color: #111111 !important;
+    padding: 12px 22px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Hover Effect on Dropdown Items */
+.dropdown-content a:hover {
+    background-color: #f3f4f8;
+    color: #3f1dcb !important;
+}
+
+/* Show Dropdown Smoothly on Mouse Hover */
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Apni original position par aa jayega */
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column; /* Forces vertical stacking */
+    justify-content: center;
+    align-items: center;
+    padding: 60px 5% 0 5%;
+    background: transparent linear-gradient(248deg, #312393 0%, #1f2740 100%) 0% 0% no-repeat;
+    position: relative;
+    overflow: hidden;
+    min-height: 550px;
+    background-image: url('https://www.vtechlabs.com/wp-content/themes/VTechLabs/assets/images/home-banner-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Banner Content */
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 80px 0;
+}
+
+.banner-content h1 {
+  font-family: 'Georgia', serif; 
+  font-size: 52px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column; /* Forces the two spans to stack on separate lines */
+  gap: 10px;              /* Adds breathing room between the lines */
+}
+
+.highlight-text {
+  color: #ffe600; /* Yellow accent */
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+.consultant-section {
+  background-color: #ffffff;
+  padding: 80px 6%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #111111;
+}
+
+/* Top Section Layout */
+.consultant-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 70px;
+}
+
+.consultant-left {
+  flex: 1.2;
+}
+
+.consultant-left h2 {
+  font-family: 'Georgia', serif;
+  font-size: 38px;
+  font-weight: 500;
+  color: #3f1dcb; /* Deep purple matching heading styling */
+  line-height: 1.25;
+  margin-bottom: 25px;
+}
+
+.consultant-left p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.consultant-left p:last-child {
+  margin-bottom: 0;
+}
+
+/* Right Image */
+.consultant-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.consultant-right img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
+}
+
+/* Bottom Section: Students Placed In Companies */
+.placed-companies-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.placed-companies-section h3 {
+  font-family: 'Georgia', serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #20c997; /* Green accent color */
+  margin-bottom: 40px;
+}
+
+/* Logos Carousel Track */
+.logos-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  max-width: 1050px;
+  overflow: hidden;
+}
+
+.company-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 10px;
+}
+
+.company-logo img {
+  max-height: 45px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: filter 0.3s, opacity 0.3s;
+}
+
+.company-logo img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Slider Arrows */
+.slider-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #e6f4ea;
+  border: none;
+  color: #137333;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.slider-btn:hover {
+  background-color: #ceead6;
+}
+
+.benefits-section {
+  background: transparent linear-gradient(248deg, #312393 0%, #1f2740 100%) 0% 0% no-repeat;
+  background-color: #24145e; /* Deep purple background */
+  padding: 80px 6%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Header */
+.benefits-header {
+  margin-bottom: 70px;
+}
+
+.benefits-header h2 {
+  font-family: 'Georgia', serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: #ffe600; /* Yellow accent title */
+  margin-bottom: 15px;
+}
+
+.benefits-header p {
+  font-size: 16px;
+  color: #e5e7eb;
+  margin: 0;
+}
+
+/* Grid Layout */
+.benefits-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Benefit Card */
+.benefit-card {
+  flex: 1;
+  background-color: #e6f4ea; /* Pale green card background matching image */
+  border-radius: 16px;
+  padding: 50px 30px 40px 30px;
+  position: relative;
+  margin-top: 35px; /* Leaves room for the overlapping circle badge */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Overlapping Number Badge */
+.number-badge {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  background-color: #20c997; /* Teal/Green color matching screenshot */
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', serif;
+  font-size: 32px;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(32, 201, 151, 0.4);
+  border: 4px solid #24145e; /* Matches section background for clean cut-out effect */
+}
+
+.benefit-card p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #1f2937; /* Dark text for readability on pale green */
+  margin: 0;
+}
+
+/* recent placement secttion */
+
+.recent-placements-section {
+  background-color: #ffffff;
+  padding: 80px 6%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left; /* Aligns checklist text left as shown in screenshot */
+}
+
+/* Placements Section Header */
+.placements-header h2 {
+  font-family: 'Georgia', serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: #20c997; 
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Cards Container Grid */
+.placements-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 25px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+/* Individual Placement Card */
+.placement-card {
+  flex: 1;
+  min-width: 220px;
+  background-color: #f3f4f8; 
+  border-radius: 16px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease;
+}
+
+.placement-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Student Image */
+.student-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.student-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Student Info */
+.student-info h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+  margin: 0 0 6px 0;
+  text-align: center;
+}
+
+.student-info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  margin: 0;
+  text-align: center;
+}
+
+/* Dotted Divider Line */
+.card-divider {
+  width: 80%;
+  height: 1px;
+  background-image: linear-gradient(to right, #9ca3af 50%, transparent 50%);
+  background-size: 6px 1px;
+  margin: 25px 0;
+}
+
+/* Company Logo Container */
+.company-logo {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-logo img {
+  max-height: 35px;
+  max-width: 120px;
+  object-fit: contain;
+}
+
+/* Carousel Navigation Buttons (Centered below cards) */
+.carousel-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 70px; /* Space before the next header */
+}
+
+.nav-arrow-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #3f1dcb; 
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.nav-arrow-btn:hover {
+  opacity: 0.85;
+}
+
+/* IT Recruiting Firms Section Styling */
+.firms-content-wrapper {
+  margin-top: 20px;
+}
+
+.firms-header {
+  margin-bottom: 25px;
+}
+
+.firms-header h2 {
+  font-family: 'Georgia', serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: #3f1dcb; 
+  margin-bottom: 15px;
+}
+
+.firms-header p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+/* Checklist Styling */
+.firms-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.firms-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 16px;
+  color: #222222;
+  line-height: 1.5;
+}
+
+.firms-list li i {
+  color: #3f1dcb; 
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+/* Footer Conclusion Text */
+.firms-footer p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111111;
+  margin: 0;
+}
+
+/* why-choose-section */
+
+.why-choose-section {
+  background-color: #f8f9fc; /* Soft neutral background matching screenshot */
+  padding: 80px 8%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #111111;
+}
+
+/* Header */
+.why-choose-header {
+  margin-bottom: 30px;
+}
+
+.why-choose-header h2 {
+  font-family: 'Georgia', serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: #3f1dcb; /* Deep purple heading */
+  margin-bottom: 20px;
+}
+
+/* Checklist Styling */
+.why-choose-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 35px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.why-choose-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 16px;
+  color: #222222;
+  line-height: 1.5;
+}
+
+.why-choose-list li i {
+  color: #3f1dcb; /* Deep purple checkmark */
+  font-size: 15px;
+  margin-top: 4px; /* Aligns checkmark nicely with the first line of text */
+}
+
+/* Footer Conclusion Paragraphs */
+.why-choose-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.why-choose-footer p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222222;
+  margin: 0;
+}
+
+.start-learning-section {
+  background-color: #f2f7e9; /* Soft pale greenish-yellow gradient/solid background */
+  background: linear-gradient(135deg, #f7faed 0%, #e5f1e3 100%);
+  padding: 80px 8%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/* Header */
+.form-header {
+  margin-bottom: 40px;
+}
+
+.form-header h2 {
+  font-family: 'Georgia', serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: #3f1dcb; /* Deep purple heading */
+  margin-bottom: 10px;
+}
+
+.form-header p {
+  font-size: 16px;
+  color: #333333;
+  margin: 0;
+}
+
+/* Form Layout */
+.learning-form {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 16px 20px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #111111;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  transition: border-color 0.2s;
+}
+
+.form-group input::placeholder {
+  color: #6b7280;
+}
+
+.form-group input:focus {
+  border-color: #3f1dcb;
+}
+
+/* reCAPTCHA Row & Box */
+.captcha-row {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.recaptcha-box {
+  background: #f9f9f9;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  padding: 12px 16px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.recaptcha-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.recaptcha-inner input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.recaptcha-inner label {
+  font-size: 14px;
+  color: #222222;
+  cursor: pointer;
+}
+
+.recaptcha-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  color: #555555;
+}
+
+.recaptcha-logo img {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 2px;
+}
+
+.recaptcha-logo small {
+  font-size: 8px;
+  color: #777777;
+}
+
+/* Submit Button */
+.submit-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-btn {
+  background-color: #3f1dcb; /* Deep purple button */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 16px 45px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(63, 29, 203, 0.3);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #3216a3;
+  transform: translateY(-2px);
+}
+
+/* profile-building-section */
+
+.profile-building-section {
+  background-color: #f8f9fc;
+  padding: 80px 5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.profile-header {
+  margin-bottom: 50px;
+}
+
+.profile-header h2 {
+  font-family: 'Georgia', serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: #3f1dcb;
+  margin: 0;
+}
+
+.profile-steps-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Card Container with Perspective for 3D Effect */
+.flip-card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 260px;
+  height: 250px;
+  background-color: transparent;
+  perspective: 1000px; /* Gives depth to the 3D rotation */
+}
+
+/* Inner Container that Flips */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+/* Trigger the flip on hover */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Common styles for Front and Back sides */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hides the reverse side while flipping */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+/* Front Side Styling */
+.flip-card-front {
+  background-color: #f1f3f9;
+  color: #2b1b66;
+}
+
+.icon-circle {
+  width: 75px;
+  height: 75px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.icon-circle i {
+  font-size: 30px;
+  color: #20c997;
+}
+
+.flip-card-front h3 {
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Back Side Styling (Turns Green when flipped) */
+.flip-card-back {
+  background-color: #20c997;
+  color: #ffffff;
+  transform: rotateY(180deg); /* Pre-rotates the back side */
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(32, 201, 151, 0.3);
+}
+
+.flip-card-back p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Connecting Arrow */
+.step-arrow {
+  font-size: 20px;
+  color: #3f1dcb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* performance-section */
+
+.performance-section {
+  background-color: #ffffff;
+  padding: 80px 8%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/* Header */
+.performance-header {
+  margin-bottom: 50px;
+}
+
+.performance-header h2 {
+  font-family: 'Georgia', serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: #3f1dcb; /* Deep purple heading */
+  margin: 0;
+}
+
+/* 2x2 Grid Layout */
+.performance-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Stat Card Base */
+.stat-card {
+  border-radius: 20px;
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Background Tints matching screenshot */
+.stat-card.green-tint {
+  background-color: #eaf5ed; /* Pale greenish-teal tint */
+}
+
+.stat-card.grey-tint {
+  background-color: #f3f4f8; /* Soft pale grey-purple tint */
+}
+
+/* Stat Numbers */
+.stat-number {
+  font-family: 'Georgia', serif;
+  font-size: 52px;
+  font-weight: 500;
+  color: #2b1b66; /* Deep purple numbers */
+  line-height: 1;
+  min-width: 150px;
+  text-align: left;
+}
+
+/* Stat Labels */
+.stat-label {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2b1b66; /* Deep purple text */
+  text-align: left;
+}
+
+/* FAQ Section Container */
+.faq-section {
+    padding: 80px 5%;
+    background-color: #111432; /* Deep blue background matching VTechLabs */
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-heading {
+    font-size: 44px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: -0.5px;
+}
+
+/* FAQ List Layout */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    background-color: #191e45;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Question Header Button */
+.faq-question {
+    width: 100%;
+    background-color: #1e2456;
+    color: #ffffff;
+    border: none;
+    padding: 20px 25px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.2s;
+}
+
+/* Active Open Question styling (Mint green banner matching screenshot) */
+.faq-item.active .faq-question {
+    background-color: #2dd4bf;
+    color: #0f172a;
+}
+
+.arrow-icon {
+    font-size: 14px;
+}
+
+/* Answer Container */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 25px;
+    background-color: #151a3f;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 150px;
+    padding: 20px 25px;
+}
+
+.faq-answer p {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+/* Footer Main Wrapper */
+.site-footer {
+    background-color: #161616; /* Dark charcoal/black matching screenshot */
+    color: #e5e7eb;
+    padding: 70px 6%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.2fr 1.3fr;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Headings Styling */
+.footer-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #facc15; /* Yellow/Gold accent matching screenshot */
+    margin-bottom: 25px;
+    font-family: serif; /* Gives the classic editorial serif feel */
+}
+
+/* Column 1: Brand */
+.footer-logo {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+}
+
+.v-green {
+    color: #22c55e;
+}
+
+.labs-white {
+    color: #ffffff;
+}
+
+.copyright-text {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-bottom: 15px;
+}
+
+.footer-divider {
+    width: 80%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.social-icons a {
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.social-icons a:hover {
+    background-color: #ffffff;
+    color: #161616;
+    border-color: #ffffff;
+}
+
+/* QR Code Section */
+.qr-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.qr-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #d1d5db;
+}
+
+.qr-box {
+    background-color: #ffffff;
+    width: 115px;
+    height: 115px;
+    padding: 6px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Footer Links Lists */
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-links li a:hover {
+    color: #22c55e;
+}
+
+/* Contact Us Column */
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+.contact-list li i {
+    color: #facc15;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+.contact-list li a {
+    text-decoration: none;
+    color: #cbd5e1;
+    transition: color 0.2s;
+}
+
+.contact-list li a:hover {
+    color: #22c55e;
+}
+
+.address-item span {
+    line-height: 1.5;
+}
+
+/* Responsive adjustment for tablets/mobiles */
+@media (max-width: 1000px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
