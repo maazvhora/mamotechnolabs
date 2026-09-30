@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamo Technolabs - Innovations Unlimited</title>
+    <link rel="stylesheet" href="sr.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <!-- Container holding the image and text side by side -->
+        <div class="brand-container">
+            <img src="./mamo-logo.png" alt="Mamo Techno Labs Logo" class="brand-logo">
+            <div class="brand-text">
+                <span class="sub-title">Mamo</span>
+                <h1 class="main-title">TechnoLabs</h1>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="#" id="courses-btn" class="nav-link">COURSES <i class="fa-solid fa-chevron-down"></i></a>
+            <a href="../about.html">ABOUT US</a>
+
+            <!-- Student Corner Dropdown -->
+            <div class="dropdown">
+                <a href="#" class="nav-link">STUDENT CORNER <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="./internship.html">IT Internship In Vadodara</a>
+                    <a href="./final-year.html">Final Year Project Training</a>
+                    <a href="./visit.html">Industrial Visit</a>
+                    <a href="./sr.html">Student Reviews</a>
+                    <a href="./blog.html">Blog</a>
+                    <a href="./nios.html">NIOS Learning Centre</a>
+                </div>
+            </div>
+
+            <a href="../placment.html">PLACEMENTS</a>
+            <a href="../contect.html">CONTACT</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="../skill.html" class="btn-skill"><i class="fa-solid fa-brain"></i> Skill Test</a>
+            <a href="../hire.html" class="btn-hire"><i class="fa-solid fa-magnifying-glass"></i> HIRE FROM US</a>
+        </div>
+    </header>
+
+    <!-- Hero / Banner Section -->
+    <section class="hero-section">
+        <div class="banner-content">
+            <h1>Student <span class="highlight-text">Reviews</span></h1>
+        </div>
+    </section>
+
+    <section class="student-experience-section">
+        <div class="experience-container">
+            <!-- Header with Top Pill and Filter Dropdown -->
+            <div class="experience-header-row">
+            <div class="header-titles">
+                <span class="top-pill">What Our Students Say</span>
+                <h2>About Their Learning Experience</h2>
+            </div>
+
+            <!-- Filter Dropdown -->
+            <div class="dropdown-wrapper">
+                <button class="dropdown-toggle" onclick="toggleDropdown()">
+                <span id="selectedFilterText">All Reviews</span>
+                <i class="fa-solid fa-sliders"></i>
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                <div class="dropdown-item active" onclick="selectFilter('All Reviews')">All Reviews</div>
+                <div class="dropdown-item" onclick="selectFilter('Google Reviews')">Google Reviews</div>
+                <div class="dropdown-item" onclick="selectFilter('YouTube Reviews')">YouTube Reviews</div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Cards Grid (Expanded with 6 Reviews) -->
+            <div class="experience-grid">
+            <!-- 1. Video Review (Devesh Jadav) -->
+            <div class="exp-card video-card" data-category="youtube">
+                <div class="video-bg-wrapper">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/student-devesh.jpg" alt="Devesh Jadav" />
+                <div class="video-overlay-gradient"></div>
+                <div class="play-btn-circle"><i class="fa-solid fa-play"></i></div>
+                <div class="video-top-info">
+                    <div class="student-avatar-small"><img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/vtech-logo.png" alt="VTechLabs" /></div>
+                    <div>
+                    <strong>Devesh Jadav’s journey proves that the...</strong>
+                    <span>VTechLabs Institute</span>
+                    </div>
+                </div>
+                <div class="video-bottom-info">
+                    <div class="student-details-bottom">
+                    <h4>Devesh Jadav</h4>
+                    <span>June 26, 2026</span>
+                    </div>
+                    <a href="#" class="watch-youtube-link"><i class="fa-brands fa-youtube"></i> Watch on <strong>YouTube</strong></a>
+                </div>
+                </div>
+            </div>
+
+            <!-- 2. Google Review (Zeel Ketan Panchal) -->
+            <div class="exp-card text-card" data-category="google">
+                <div class="text-card-header">
+                <div class="user-avatar-blue">Z</div>
+                <div>
+                    <h4>Zeel Ketan Panchal</h4>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <span class="review-date">June 26, 2026</span>
+                </div>
+                <p class="review-body">
+                Had a great internship experience at VTechLabs. The work environment was supportive and I got the opportunity to learn many new things. The team members were helpful and guided me throughout the internship. I gained practical experience, improved my skills, and got exposure to real-world projects.
+                </p>
+            </div>
+
+            <!-- 3. Video Review (Akhil Hingrajiya) -->
+            <div class="exp-card video-card" data-category="youtube">
+                <div class="video-bg-wrapper">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/student-akhil.jpg" alt="Akhil Hingrajiya" />
+                <div class="video-overlay-gradient"></div>
+                <div class="play-btn-circle"><i class="fa-solid fa-play"></i></div>
+                <div class="video-top-info">
+                    <div class="student-avatar-small"><img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/vtech-logo.png" alt="VTechLabs" /></div>
+                    <div>
+                    <strong>Akhil Hingrajiya’s journey...</strong>
+                    <span>VTechLabs Institute</span>
+                    </div>
+                </div>
+                <div class="video-bottom-info">
+                    <div class="student-details-bottom">
+                    <h4>Akhil Hingrajiya</h4>
+                    <span>June 3, 2026</span>
+                    </div>
+                    <a href="#" class="watch-youtube-link"><i class="fa-brands fa-youtube"></i> Watch on <strong>YouTube</strong></a>
+                </div>
+                </div>
+            </div>
+
+            <!-- 4. Google Review (Tejasvi Brahmbhatt) -->
+            <div class="exp-card text-card" data-category="google">
+                <div class="text-card-header">
+                <div class="user-avatar-blue">T</div>
+                <div>
+                    <h4>Tejasvi Brahmbhatt</h4>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <span class="review-date">June 10, 2026</span>
+                </div>
+                <p class="review-body">
+                The training has been instrumental in my development and understanding. I would highly recommend VTechLabs to any student looking for professional IT training and live project experience.
+                </p>
+            </div>
+
+            <!-- 5. Video Review (Aarti Barot - PHP Course) -->
+            <div class="exp-card video-card" data-category="youtube">
+                <div class="video-bg-wrapper">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/student-aarti.jpg" alt="Aarti Barot" />
+                <div class="video-overlay-gradient"></div>
+                <div class="play-btn-circle"><i class="fa-solid fa-play"></i></div>
+                <div class="video-top-info">
+                    <div class="student-avatar-small"><img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/vtech-logo.png" alt="VTechLabs" /></div>
+                    <div>
+                    <strong>PHP course review by Aarti Barot</strong>
+                    <span>VTechLabs Institute</span>
+                    </div>
+                </div>
+                <div class="video-bottom-info">
+                    <div class="student-details-bottom">
+                    <h4>Aarti Barot</h4>
+                    <span>June 5, 2026</span>
+                    </div>
+                    <a href="#" class="watch-youtube-link"><i class="fa-brands fa-youtube"></i> Watch on <strong>YouTube</strong></a>
+                </div>
+                </div>
+            </div>
+
+            <!-- 6. Google Review (Diya) -->
+            <div class="exp-card text-card" data-category="google">
+                <div class="text-card-header">
+                <div class="user-avatar-blue">D</div>
+                <div>
+                    <h4>Diya</h4>
+                    <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <span class="review-date">May 28, 2026</span>
+                </div>
+                <p class="review-body">
+                My experience with VTech Labs has been really wonderful. The trainers are patient and explain complex coding concepts very easily. Excellent platform for beginners!
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="careers-banner-section">
+        <div class="careers-banner-container">
+            <!-- Background Faint Watermark Text -->
+            <div class="watermark-bg">Where Skills Become Careers</div>
+            
+            <!-- Foreground Bold Text -->
+            <div class="foreground-text">Where Skills Become Careers</div>
+        </div>
+    </section>
+
+    <!-- Still Confused Section -->
+    <section class="confused-section">
+        <div class="confused-container">
+            
+            <!-- Left Side: Student Graphic -->
+            <div class="confused-left">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/04/student.png" alt="Confused Student">
+            </div>
+
+            <!-- Right Side: Heading & Form -->
+            <div class="confused-right">
+                <h2 class="confused-title">
+                    Still Confused? <br>
+                    Let’s Talk.
+                </h2>
+
+                <form class="confused-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <input type="tel" placeholder="Contact Number" required>
+                        <select required>
+                            <option value="" disabled selected>Select Training</option>
+                            <option value="python">Advanced Python</option>
+                            <option value="ai">Generative AI</option>
+                            <option value="web">Full Stack Web Dev</option>
+                        </select>
+                    </div>
+
+                    <!-- Mock reCAPTCHA Box -->
+                    <div class="recaptcha-row">
+                        <div class="recaptcha-box">
+                            <div class="recaptcha-content">
+                                <input type="checkbox" id="robot-check">
+                                <label for="robot-check">I'm not a robot</label>
+                            </div>
+                            <div class="recaptcha-brand">
+                                <i class="fa-solid fa-rotate-right"></i>
+                                <span>reCAPTCHA</span>
+                                <small>Privacy - Terms</small>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-book">BOOK FREE COUNSELLING</button>
+                    
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Column 1: Logo, Copyright, Socials, & QR Code -->
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <span class="v-green">Mamo</span>Techno<span class="labs-white">Labs</span>
+                </div>
+                <p class="copyright-text">© 2026 By VTechLabs</p>
+                <div class="footer-divider"></div>
+
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <!-- Scan and Review QR Code Area -->
+                <div class="qr-section">
+                    <span class="qr-title">Scan And Review</span>
+                    <div class="qr-box">
+                        <!-- Mock QR code image or generated SVG placeholder -->
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://vtechlabs.com" alt="QR Code">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Trending Course Links -->
+            <div class="footer-col">
+                <h3 class="footer-heading">Trending Course</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Prompt Engineering</a></li>
+                    <li><a href="#">Artificial Intelligence</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">UI UX Design</a></li>
+                    <li><a href="#">Data Science</a></li>
+                    <li><a href="#">Automation Testing</a></li>
+                    <li><a href="#">Tableau</a></li>
+                    <li><a href="#">All Courses</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Information Links -->
+            <div class="footer-col">
+                <h3 class="footer-heading">Information</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Hire IT Students</a></li>
+                    <li><a href="#">Corporate Training</a></li>
+                    <li><a href="#">Internship</a></li>
+                    <li><a href="#">Job Consultancy</a></li>
+                    <li><a href="#">Industrial Visit</a></li>
+                    <li><a href="#">Training Infrastructure</a></li>
+                    <li><a href="#">CodeSprint 2024</a></li>
+                    <li><a href="#">Student Testimonials</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Us Details -->
+            <div class="footer-col contact-col">
+                <h3 class="footer-heading">Contact Us</h3>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919427602525">+91 94276 02525</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://whatsapp.com" target="_blank">+91 97254 52141</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:training@vtechlabs.com">training@vtechlabs.com</a>
+                    </li>
+                    <li class="address-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>801, Ivory Terrace,<br>R.C. Dutt Road,<br>Vadodara-07, Gujarat</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+<script src="sr.js"></script>
+</body>
+</html>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamo Technolabs - Innovations Unlimited</title>
+    <link rel="stylesheet" href="hire.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <!-- Container holding the image and text side by side -->
+        <div class="brand-container">
+            <img src="./mamo-logo.png" alt="Mamo Techno Labs Logo" class="brand-logo">
+            <div class="brand-text">
+                <span class="sub-title">Mamo</span>
+                <h1 class="main-title">TechnoLabs</h1>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="#" id="courses-btn" class="nav-link">COURSES <i class="fa-solid fa-chevron-down"></i></a>
+            <a href="./about.html">ABOUT US</a>
+
+            <!-- Student Corner Dropdown -->
+            <div class="dropdown">
+                <a href="#" class="nav-link">STUDENT CORNER <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="./student-corner/internship.html">IT Internship In Vadodara</a>
+                    <a href="./student-corner/final-year.html">Final Year Project Training</a>
+                    <a href="./student-corner/visit.html">Industrial Visit</a>
+                    <a href="./student-corner/sr.html">Student Reviews</a>
+                    <a href="./student-corner/blog.html">Blog</a>
+                    <a href="./student-corner/nios.html">NIOS Learning Centre</a>
+                 </div>
+            </div>
+
+            <a href="./placment.html">PLACEMENTS</a>
+            <a href="./contect.html">CONTACT</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="./skill.html" class="btn-skill"><i class="fa-solid fa-brain"></i> Skill Test</a>
+            <a href="./hire.html" class="btn-hire"><i class="fa-solid fa-magnifying-glass"></i> HIRE FROM US</a>
+        </div>
+    </header>
+
+    <!-- Hero / Banner Section -->
+    <section class="hero-section">
+        <div class="banner-content">
+            <h1>Hire IT <span class="highlight-text">Students</span></h1>
+        </div>
+    </section>
+
+    <section class="hire-students-section">
+        <div class="hire-container">
+            <!-- Left Column: Pill and Heading -->
+            <div class="hire-left-col">
+            <span class="hire-pill">VTechLabs’ Training Center</span>
+            <h2>Hire IT Students For Free, From VTechLabs</h2>
+            </div>
+
+            <!-- Right Column: Description -->
+            <div class="hire-right-col">
+            <p>Companies in technology circles are on a constant hunt for real talent who can learn quickly and contribute to their goals without months of hand-holding. VTechLabs, the top-notch IT institute in Vadodara, flips the script. We give employers direct access to job ready IT candidates. These candidates are already trained and toughened through hands-on work. For HR teams fighting deadlines, this is an advantage they can feel almost immediately – building their junior bench.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hiring-partners-section">
+        <!-- Hiring Partners Logo Slider Sub-Section -->
+        <div class="partners-container">
+            <h2>Hiring Partners</h2>
+            
+            <div class="partners-slider-wrapper">
+            <button class="partner-nav-btn prev-btn" onclick="slidePartnersLeft()"><i class="fa-solid fa-chevron-left"></i></button>
+            
+            <div class="partners-track" id="partnersTrack">
+                <div class="partner-logo-card">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/04/C-7.png" alt="Mysphere Infotech" />
+                </div>
+                <div class="partner-logo-card">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/04/C-7.png" alt="Webmyne" />
+                </div>
+                <div class="partner-logo-card">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/04/C-7.png" alt="NetWeb Software" />
+                </div>
+                <div class="partner-logo-card">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/04/C-7.png" alt="Civica" />
+                </div>
+                <div class="partner-logo-card">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/04/C-7.png" alt="Allscripts" />
+                </div>
+                <div class="partner-logo-card">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/04/C-7.png" alt="Allscripts" />
+                </div>
+            </div>
+
+            <button class="partner-nav-btn next-btn" onclick="slidePartnersRight()"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Deep Purple CTA Banner Sub-Section -->
+        <div class="cta-banner-wrapper">
+            <div class="cta-banner-content">
+            <div class="cta-text-side">
+                <h2>Hire Industry-Ready IT Freshers At Zero Cost With VTechLabs Today!</h2>
+                <div class="cta-buttons">
+                <a href="#" class="btn-green">CALL PLACEMENT TEAM</a>
+                <a href="#" class="btn-outline-white">CONTACT US</a>
+                </div>
+            </div>
+            <div class="cta-img-side">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/Training-Infrastructure-.png" alt="Hiring 3D Illustration" />
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="talent-section">
+        <div class="talent-container">
+            <!-- Left Side: Interview/Candidate Image -->
+            <div class="talent-image-box">
+            <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/Hire-Students.jpg" alt="Industry-Ready Talent" />
+            </div>
+
+            <!-- Right Side: Heading & Description -->
+            <div class="talent-content-box">
+            <h2>Industry-Ready Talent From VTechLabs</h2>
+            <p>Students who pass through VTechlabs’ ecosystem won’t step into interviews with you as fragile beginners. They already show up as industry ready IT students. These learners have been through real assignments, peer code reviews, shifting timelines and practical debugging. Hire freshers without recruitment cost with VTechLabs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skill-coverage-section">
+        <div class="skill-coverage-container">
+            <!-- Section Heading -->
+            <h2>Talent Skill Coverage</h2>
+
+            <!-- Cards Grid (3 columns x 2 rows) -->
+            <div class="skill-cards-grid">
+            <!-- Card 1 -->
+            <div class="skill-card">
+                <div class="skill-card-img">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/Skills-1.jpg" alt="Full-Stack Web Development" />
+                </div>
+                <div class="skill-card-title">Full-Stack Web Development</div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="skill-card">
+                <div class="skill-card-img">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/Skills-2.jpg" alt="Core Programming & Logic" />
+                </div>
+                <div class="skill-card-title">Core Programming & Logic</div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="skill-card">
+                <div class="skill-card-img">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/Skills-3.jpg" alt="Testing Fundamentals" />
+                </div>
+                <div class="skill-card-title">Testing Fundamentals</div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="skill-card">
+                <div class="skill-card-img">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/Skills-4.jpg" alt="Database & Backend Basics" />
+                </div>
+                <div class="skill-card-title">Database & Backend Basics</div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="skill-card">
+                <div class="skill-card-img">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/Skills-5.jpg" alt="Software Testing Fundamentals" />
+                </div>
+                <div class="skill-card-title">Software Testing Fundamentals</div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="skill-card">
+                <div class="skill-card-img">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/Skills-6.jpg" alt="Workplace Readiness" />
+                </div>
+                <div class="skill-card-title">Workplace Readiness</div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-hire-section">
+        <div class="why-hire-container">
+            <!-- Left Side: Heading & Points -->
+            <div class="why-hire-content">
+            <h2>Why Should You Hire From VTechLabs?</h2>
+
+            <div class="why-points-list">
+                <!-- Point 1 -->
+                <div class="why-point-item">
+                <div class="why-check-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="why-point-text">
+                    <h3>Simplified Early-Career Hiring</h3>
+                    <p>We offer pre-trained and project-ready talent. Hire IT freshers in Vadodara with VTechLabs!</p>
+                </div>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="why-point-item">
+                <div class="why-check-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="why-point-text">
+                    <h3>Only Relevant Profiles</h3>
+                    <p>We understand your requirements and project rhythm before shortlisting candidates.</p>
+                </div>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="why-point-item">
+                <div class="why-check-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="why-point-text">
+                    <h3>Easy Hiring Process</h3>
+                    <p>Ours is a noise-free hiring process. You meet only candidates who truly fit.</p>
+                </div>
+                </div>
+
+                <!-- Point 4 -->
+                <div class="why-point-item">
+                <div class="why-check-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="why-point-text">
+                    <h3>Local, Job-ready Freshers in Vadodara</h3>
+                    <p>Benefit from local, available IT talent from VTechLabs. The candidates are backed by practical training.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Right Side: Student Image -->
+            <div class="why-hire-image">
+            <img src="https://www.vtechlabs.com/wp-content/uploads/2026/04/What-We-Provide.png" alt="Student Looking" />
+            </div>
+        </div>
+    </section>
+
+    <section class="infrastructure-section">
+        <div class="infrastructure-container">
+            <!-- Section Heading -->
+            <h2>Our Training Center Infrastructure</h2>
+
+            <!-- Infrastructure Slider Wrapper -->
+            <div class="infra-slider-wrapper">
+            <div class="infra-track" id="infraTrack">
+                <!-- Infrastructure Card 1 -->
+                <div class="infra-card">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/Infrastructure-3.jpeg" alt="Infrastructure 1" />
+                </div>
+                <!-- Infrastructure Card 2 -->
+                <div class="infra-card">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/Infrastructure-3.jpeg" alt="Infrastructure 2" />
+                </div>
+                <!-- Infrastructure Card 3 -->
+                <div class="infra-card">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/Infrastructure-3.jpeg" alt="Infrastructure 3" />
+                </div>
+                <!-- Infrastructure Card 4 -->
+                <div class="infra-card">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/Infrastructure-3.jpeg" alt="Infrastructure 4" />
+                </div>
+                <!-- Infrastructure Card 5 -->
+                <div class="infra-card">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/Infrastructure-3.jpeg" alt="Infrastructure 5" />
+                </div>
+            </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <div class="infra-controls">
+            <button class="infra-slider-btn" onclick="slideInfraLeft()"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="infra-slider-btn" onclick="slideInfraRight()"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works-section">
+        <div class="hiw-container">
+            <!-- Section Heading -->
+            <h2>How It Works</h2>
+
+            <div class="hiw-grid">
+            <!-- Left Side: Team Collaboration Image -->
+            <div class="hiw-image-box">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/05/how-work.jpg" alt="How It Works Team Collaboration" />
+            </div>
+
+            <!-- Right Side: Steps & Points -->
+            <div class="hiw-points-box">
+                <div class="hiw-point-item">
+                <div class="hiw-check-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="hiw-point-text">
+                    <strong>Share Your Talent Requirement:</strong> Our team understands what the role really demands and the pace within your operations. Your requirement is the strongest compass that will guide our internal evaluation[cite: 14].
+                </div>
+                </div>
+
+                <div class="hiw-point-item">
+                <div class="hiw-check-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="hiw-point-text">
+                    <strong>Creating Relevance-Driven Shortlist:</strong> Our vetting process is tough. Students must show real problem-solving abilities, clear communication and clean logic. Only those who stay strong across these filters reach your desk[cite: 14].
+                </div>
+                </div>
+
+                <div class="hiw-point-item">
+                <div class="hiw-check-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="hiw-point-text">
+                    <strong>Ergonomic seating arrangements:</strong> Our facilities are designed to enhance comfort and productivity during training sessions[cite: 14].
+                </div>
+                </div>
+
+                <div class="hiw-point-item">
+                <div class="hiw-check-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="hiw-point-text">
+                    <strong>Interviews Without Operational Strain:</strong> We handle everything that generally drains HR time (follow-ups, communication loops, schedule alignment and preparation) so that you focus entirely on evaluation[cite: 14].
+                </div>
+                </div>
+
+                <div class="hiw-point-item">
+                <div class="hiw-check-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="hiw-point-text">
+                    <strong>You Onboard – With Zero Hiring Fee:</strong> Once you choose your candidate, we stay with the process until onboarding is done. No fine print and or fee. No unexpected conditions[cite: 14].
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2 class="faq-heading">Frequently Asked Questions</h2>
+
+            <div class="faq-list">
+                
+                <!-- FAQ Item 1 (Active/Open by default) -->
+                <div class="faq-item active">
+                    <button class="faq-question">
+                        <span>Who Can Join?</span>
+                        <i class="fa-solid fa-chevron-up arrow-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Freshers, graduates & working professionals — no prior IT experience needed.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What Courses Do You Offer?</span>
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer a wide range of courses including Full Stack Web Development, Data Science, AI & Machine Learning, Python, and Software Testing.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is The Training Practical?</span>
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, our training is 100% practical, focusing on live projects, real-world case studies, and hands-on coding sessions.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do You Provide Placement Support?</span>
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer dedicated placement assistance, resume building workshops, mock interviews, and interviews with our hiring partners.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Online Or Offline Classes?</span>
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We provide both flexible online and interactive offline classroom training options based on your convenience.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Will I Get A Certificate?</span>
+                        <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, upon successful completion of the course and your capstone project, you will receive an industry-verified certificate.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="map-inquiry-section">
+  <!-- Section Heading Added Here -->
+  <div class="map-inquiry-header">
+    <h2>Get In Touch With Us</h2>
+  </div>
+
+  <div class="map-inquiry-content">
+    <!-- Left Side: Google Map Embed -->
+    <div class="map-container">
+      <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.303409444175!2d73.19888377554179!3d22.266493744119447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc5284d11c2af%3A0x2a911801d39003f2!2sMaMo%20TechnoLabs%20LLP%20-%20IT%20Staffing%20%26%20Software%20Development!5e0!3m2!1sen!2sin!4v1790589642576!5m2!1sen!2sin" 
+      width="100%" 
+      height="100%" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- Right Side: Detailed Inquiry Form -->
+    <div class="form-container">
+      <form class="detailed-inquiry-form">
+        <div class="form-row">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email ID" required />
+        </div>
+
+        <div class="form-row">
+          <input type="tel" placeholder="Contact Number" required />
+          <select required>
+            <option value="" disabled selected>Training/Internship</option>
+            <option value="training">Training</option>
+            <option value="internship">Internship</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <select required>
+            <option value="" disabled selected>Select Technology</option>
+            <option value="python">Python / Data Science</option>
+            <option value="php">PHP / Web Development</option>
+            <option value="digital-marketing">Digital Marketing</option>
+          </select>
+          <input type="text" placeholder="Location/City" required />
+        </div>
+
+        <div class="form-row full-width">
+          <select required>
+            <option value="" disabled selected>How You Heard About Us?</option>
+            <option value="google">Google Search</option>
+            <option value="social">Social Media</option>
+            <option value="friend">Friend / Referral</option>
+          </select>
+        </div>
+
+        <div class="form-row full-width">
+          <textarea placeholder="Comments" rows="4" required></textarea>
+        </div>
+
+        <!-- reCAPTCHA and Submit Button -->
+        <div class="form-bottom-row">
+          <div class="recaptcha-box">
+            <div class="recaptcha-inner">
+              <input type="checkbox" id="robot-check" />
+              <label for="robot-check">I'm not a robot</label>
+            </div>
+            <div class="recaptcha-logo">
+              <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" />
+              <span>reCAPTCHA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="submit-btn-wrapper">
+          <button type="submit" class="send-inquiry-btn">SEND INQUIRY</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Column 1: Logo, Copyright, Socials, & QR Code -->
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <span class="v-green">Mamo</span>Techno<span class="labs-white">Labs</span>
+                </div>
+                <p class="copyright-text">© 2026 By VTechLabs</p>
+                <div class="footer-divider"></div>
+
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <!-- Scan and Review QR Code Area -->
+                <div class="qr-section">
+                    <span class="qr-title">Scan And Review</span>
+                    <div class="qr-box">
+                        <!-- Mock QR code image or generated SVG placeholder -->
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://vtechlabs.com" alt="QR Code">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Trending Course Links -->
+            <div class="footer-col">
+                <h3 class="footer-heading">Trending Course</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Prompt Engineering</a></li>
+                    <li><a href="#">Artificial Intelligence</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">UI UX Design</a></li>
+                    <li><a href="#">Data Science</a></li>
+                    <li><a href="#">Automation Testing</a></li>
+                    <li><a href="#">Tableau</a></li>
+                    <li><a href="#">All Courses</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Information Links -->
+            <div class="footer-col">
+                <h3 class="footer-heading">Information</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Hire IT Students</a></li>
+                    <li><a href="#">Corporate Training</a></li>
+                    <li><a href="#">Internship</a></li>
+                    <li><a href="#">Job Consultancy</a></li>
+                    <li><a href="#">Industrial Visit</a></li>
+                    <li><a href="#">Training Infrastructure</a></li>
+                    <li><a href="#">CodeSprint 2024</a></li>
+                    <li><a href="#">Student Testimonials</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Us Details -->
+            <div class="footer-col contact-col">
+                <h3 class="footer-heading">Contact Us</h3>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919427602525">+91 94276 02525</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://whatsapp.com" target="_blank">+91 97254 52141</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:training@vtechlabs.com">training@vtechlabs.com</a>
+                    </li>
+                    <li class="address-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>801, Ivory Terrace,<br>R.C. Dutt Road,<br>Vadodara-07, Gujarat</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+ <script src="hire.js"></script>
+</body>
+</html>
+
