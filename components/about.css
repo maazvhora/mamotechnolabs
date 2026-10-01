@@ -8,16 +8,30 @@
 body {
     background-color: #0b132b;
     color: #ffffff;
+    padding-top: 85px; /* Navbar ke liye space */
+    margin: 0; /* Body ke default margin ko remove karne ke liye */
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling effect ke liye */
 }
 
 /* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    background: transparent linear-gradient(248deg, #312393 0%, #1f2740 100%) 0% 0% no-repeat;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed !important; /* Navbar ko screen ke top par fix karne ke liye */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* Taaki yeh baaki content ke hamesha upar rahe */
+  box-sizing: border-box;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: transparent linear-gradient(248deg, #312393 0%, #1f2740 100%) 0% 0% no-repeat;
+  
+  /* Koi transition ya animation nahi hai */
 }
 
 /* The magic happens here using Flexbox */
@@ -35,6 +49,13 @@ body {
 .brand-text {
     display: flex;
     flex-direction: column; /* Stack "Mamo" and "Techno Labs" vertically */
+}
+
+.brand-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .sub-title {
@@ -1393,4 +1414,44 @@ body {
     .footer-container {
         grid-template-columns: 1fr;
     }
+}
+
+
+/* Floating WhatsApp Button Styling */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366; /* Official WhatsApp Green */
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  z-index: 99999; /* Taaki yeh sabhi sections aur layers ke upar rahe */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect jab mouse icon par jaye */
+.whatsapp-float:hover {
+  background-color: #20ba5a;
+  transform: scale(1.1); /* Thoda sa zoom ho jayega */
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+/* Mobile Screens ke liye thoda chota size */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+  }
 }

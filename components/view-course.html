@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamo Technolabs - Innovations Unlimited</title>
+    <link rel="icon" type="image/png" href="./mamo-logo.png">
+    <link rel="stylesheet" href="view-course.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <!-- Container holding the image and text side by side -->
+         <a href="../index.html" class="brand-link">
+            <div class="brand-container">
+                <img src="./mamo-logo.png" alt="Mamo Techno Labs Logo" class="brand-logo">
+                <div class="brand-text">
+                    <span class="sub-title">Mamo</span>
+                    <h1 class="main-title">TechnoLabs</h1>
+                </div>
+            </div>
+        </a>
+        <nav class="nav-links">
+            <a href="#" id="courses-btn" class="nav-link">COURSES <i class="fa-solid fa-chevron-down"></i></a>
+            <a href="./about.html">ABOUT US</a>
+
+            <!-- Student Corner Dropdown -->
+            <div class="dropdown">
+                <a href="#" class="nav-link">STUDENT CORNER <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="./student-corner/internship.html">IT Internship In Vadodara</a>
+                    <a href="./student-corner/final-year.html">Final Year Project Training</a>
+                    <a href="./student-corner/visit.html">Industrial Visit</a>
+                    <a href="./student-corner/sr.html">Student Reviews</a>
+                    <a href="./student-corner/blog.html">Blog</a>
+                    <a href="./student-corner/nios.html">NIOS Learning Centre</a>
+                </div>
+            </div>
+
+            <a href="./placment.html">PLACEMENTS</a>
+            <a href="./contect.html">CONTACT</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="./skill.html" class="btn-skill"><i class="fa-solid fa-brain"></i> Skill Test</a>
+            <a href="./hire.html" class="btn-hire"><i class="fa-solid fa-magnifying-glass"></i> HIRE FROM US</a>
+        </div>
+    </header>
+
+    <!-- Hero / Banner Section -->
+    <section class="hero-section">
+        <div class="banner-content">
+            <h1>
+                <span class="line-top">All</span>
+                <span class="highlight-text">Courses</span>
+            </h1>
+        </div>
+    </section>
+
+
+    <section class="trending-courses-section">
+        <div class="courses-container">
+            
+            <!-- Section Header -->
+            <h2>Discover The Top Trending Courses</h2>
+            <p class="section-subtitle">All these courses have been designed to help you transition from a beginner to an expert. Our aim is to provide you with top-quality information technology training courses and industry expertise to boost your career prospects.</p>
+
+            <!-- Main Layout Grid -->
+            <div class="courses-main-layout">
+            
+            <!-- Left Sidebar (Filters) -->
+            <aside class="courses-sidebar">
+                
+                <!-- Search Box -->
+                <div class="courses-search-box">
+                <input type="text" id="courseSearchInput" placeholder="Search courses..." onkeyup="filterCourses()" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <!-- Courses Categories Checkboxes -->
+                <div class="filter-group">
+                <h3>Courses</h3>
+                <label><input type="checkbox" name="category" value="Trending" onchange="filterCourses()"> Trending</label>
+                <label><input type="checkbox" name="category" value="Analytics" onchange="filterCourses()"> Analytics & BI</label>
+                <label><input type="checkbox" name="category" value="AI & Machine Learning" onchange="filterCourses()"> AI & Machine Learning</label>
+                <label><input type="checkbox" name="category" value="Programing Development" onchange="filterCourses()"> Programing Development</label>
+                <label><input type="checkbox" name="category" value="Software Testing & QA" onchange="filterCourses()"> Software Testing & QA</label>
+                <label><input type="checkbox" name="category" value="Digital Marketing" onchange="filterCourses()"> Digital Marketing</label>
+                <label><input type="checkbox" name="category" value="Mobile App Development" onchange="filterCourses()"> Mobile App Development</label>
+                <label><input type="checkbox" name="category" value="Web Development" onchange="filterCourses()"> Web Development</label>
+                <label><input type="checkbox" name="category" value="Design" onchange="filterCourses()"> Design</label>
+                </div>
+
+                <!-- Duration Checkboxes -->
+                <div class="filter-group">
+                <h3>Duration</h3>
+                <label><input type="checkbox" name="duration" value="1 Month" onchange="filterCourses()"> 1 Month</label>
+                <label><input type="checkbox" name="duration" value="2 Months" onchange="filterCourses()"> 2 Months</label>
+                <label><input type="checkbox" name="duration" value="3 Months" onchange="filterCourses()"> 3 Months</label>
+                <label><input type="checkbox" name="duration" value="4 Months" onchange="filterCourses()"> 4 Months</label>
+                <label><input type="checkbox" name="duration" value="6 Months" onchange="filterCourses()"> 6 Months</label>
+                </div>
+
+                <!-- Reset Button -->
+                <button class="courses-reset-btn" onclick="resetCourseFilters()">RESET</button>
+
+                <!-- Sidebar Promo Box -->
+                <div class="sidebar-demo-box">
+                <h4>Book Free Demo Class</h4>
+                <p>Experience Learning Before You Join</p>
+                <a href="tel:+917041493457" class="demo-btn"><i class="fa-solid fa-phone"></i> +91 70414 93457</a>
+                </div>
+
+            </aside>
+
+            <!-- Right Content Area -->
+            <div class="courses-content-area">
+                <div class="courses-count-label">46 Course Available</div>
+
+                <div class="courses-grid" id="coursesGrid">
+                
+                <!-- Course Card 1 -->
+                <div class="course-card" data-category="Programing Development" data-duration="2 Months" data-name="Advanced Python Course">
+                    <div class="course-card-img bg-python">
+                    <span class="badge-tag new-tag">New</span>
+                    <h3>Advanced Python Course</h3>
+                    </div>
+                    <div class="course-card-body">
+                    <p>Python is widely used in various applications and development projects. It is commonly...</p>
+                    <div class="course-card-footer">
+                        <span><i class="fa-regular fa-clock"></i> 2 Months</span>
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card" data-category="AI & Machine Learning" data-duration="1 Month" data-name="AI Master Tools">
+                    <div class="course-card-img bg-ai-tools">
+                    <span class="badge-tag trending-tag">Trending</span>
+                    <span class="badge-tag new-tag">New</span>
+                    <h3>AI Master Tools</h3>
+                    </div>
+                    <div class="course-card-body">
+                    <p>Most people know five AI tools and may use them wrong. The course teaches them whic...</p>
+                    <div class="course-card-footer">
+                        <span><i class="fa-regular fa-clock"></i> 1 Month</span>
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card" data-category="AI & Machine Learning" data-duration="3 Months" data-name="AWS Cloud Engineer Training">
+                    <div class="course-card-img bg-aws">
+                    <span class="badge-tag new-tag">New</span>
+                    <h3>AWS Cloud Engineer Training</h3>
+                    </div>
+                    <div class="course-card-body">
+                    <p>Cloud computing has become the core of all digital businesses, and Amazon Web Service...</p>
+                    <div class="course-card-footer">
+                        <span><i class="fa-regular fa-clock"></i> 3 Months</span>
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 4 -->
+                <div class="course-card" data-category="Digital Marketing" data-duration="2 Months" data-name="AI Content Creation Course">
+                    <div class="course-card-img bg-content">
+                    <span class="badge-tag new-tag">New</span>
+                    <h3>AI Content Creation Course</h3>
+                    </div>
+                    <div class="course-card-body">
+                    <p>Welcome to the future of online writing. Every business needs compelling text, images, and...</p>
+                    <div class="course-card-footer">
+                        <span><i class="fa-regular fa-clock"></i> 2 Months</span>
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 5 -->
+                <div class="course-card" data-category="Software Testing & QA" data-duration="4 Months" data-name="Cyber Security Course">
+                    <div class="course-card-img bg-cyber">
+                    <span class="badge-tag new-tag">New</span>
+                    <h3>Cyber Security Course</h3>
+                    </div>
+                    <div class="course-card-body">
+                    <p>Are you ready to take up the challenge of working in the field of cyber security, or are...</p>
+                    <div class="course-card-footer">
+                        <span><i class="fa-regular fa-clock"></i> 4 Months</span>
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 6 -->
+                <div class="course-card" data-category="Analytics & BI" data-duration="4 Months" data-name="Business Development Executive">
+                    <div class="course-card-img bg-business">
+                    <span class="badge-tag new-tag">New</span>
+                    <h3>Business Development Executive</h3>
+                    </div>
+                    <div class="course-card-body">
+                    <p>There is a significant gap in most IT companies, especially between what their...</p>
+                    <div class="course-card-footer">
+                        <span><i class="fa-regular fa-clock"></i> 4 Months</span>
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 7 -->
+                <div class="course-card" data-category="Web Development" data-duration="3 Months" data-name="Angular Course with AI">
+                    <div class="course-card-img bg-angular">
+                    <span class="badge-tag new-tag">New</span>
+                    <h3>Angular Course with AI</h3>
+                    </div>
+                    <div class="course-card-body">
+                    <p>Are you looking for a direct path to start a successful career in front-end technology? A...</p>
+                    <div class="course-card-footer">
+                        <span><i class="fa-regular fa-clock"></i> 3 Months</span>
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 8 -->
+                <div class="course-card" data-category="Programing Development" data-duration="2 Months" data-name="Core Java Course with AI">
+                    <div class="course-card-img bg-java">
+                    <span class="badge-tag new-tag">New</span>
+                    <h3>Core Java Course with AI</h3>
+                    </div>
+                    <div class="course-card-body">
+                    <p>Java is a must-have programming language in software development today. Our core Java...</p>
+                    <div class="course-card-footer">
+                        <span><i class="fa-regular fa-clock"></i> 2 Months</span>
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 9 -->
+                <div class="course-card" data-category="AI & Machine Learning" data-duration="3 Months" data-name="Generative AI Course">
+                    <div class="course-card-img bg-genai">
+                    <span class="badge-tag trending-tag">Trending</span>
+                    <h3>Generative AI Course</h3>
+                    </div>
+                    <div class="course-card-body">
+                    <p>VTechLabs' Generative AI course is built for making AI learning easier, without the heavy...</p>
+                    <div class="course-card-footer">
+                        <span><i class="fa-regular fa-clock"></i> 3 Months</span>
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    </div>
+                </div>
+
+                </div>
+
+                <!-- Pagination Bar -->
+                <div class="courses-pagination">
+                <button class="page-btn active" onclick="setCoursePage(1)">1</button>
+                <button class="page-btn" onclick="setCoursePage(2)">2</button>
+                <button class="page-btn" onclick="setCoursePage(3)">3</button>
+                <span class="page-dots">...</span>
+                <button class="page-btn" onclick="setCoursePage(6)">6</button>
+                <button class="page-nav-btn" onclick="nextCoursePage()">Next</button>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+     <section class="full-testimonials">
+            <section class="testimonials-section">
+                <div class="testimonials-container">
+                    
+                    <!-- Left Column: Title, Subtitle & Testimonial Card -->
+                    <div class="testimonials-left">
+                        <h2 class="section-title">
+                            Results That Speak For <span class="highlight-yellow">Themselves</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            Meet the students who transformed their careers with us.
+                        </p>
+
+                        <div class="story-pill-row">
+                            <span class="pill-box">Your success story</span>
+                            <span class="subtitle-text">could be the next one featured here.</span>
+                        </div>
+
+                        <!-- Testimonial Quote Box -->
+                        <div class="quote-box">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <h3 class="student-name">Princy Patel, PHP Web Development</h3>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">
+                                Thank you For a 15-day (or short-term) PHP web development internship in 2026, the best-reviewed options focus on hands-on project experience, fast-tracked learning, and certification
+                            </p>
+                        </div>
+
+                        <!-- Left Column Slider Nav Buttons -->
+                        <div class="slider-arrows left-arrows">
+                            <button class="arrow-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Divider Line -->
+                    <div class="vertical-divider"></div>
+
+                    <!-- Right Column: Video Testimonial Card -->
+                    <div class="testimonials-right">
+                        <div class="video-card">
+                            <!-- Video Header Profile -->
+                            <div class="video-header">
+                                <div class="profile-thumb">V</div>
+                                <div class="video-meta">
+                                    <h4>PHP course review by Aarti Barot</h4>
+                                    <span>VTechLabs Institute</span>
+                                </div>
+                            </div>
+
+                            <!-- Video Placeholder Image & Play Button -->
+                            <div class="video-screen">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Student Video Review">
+                                <div class="play-button">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+
+                            <!-- Video Footer Label -->
+                            <div class="video-footer-label">
+                                <span class="student-label-name">Aarti Barot</span>
+                                <span class="student-label-sub">PHP Developer</span>
+                            </div>
+
+                            <!-- Video Inner Arrows -->
+                            <div class="video-nav-arrows">
+                                <i class="fa-solid fa-chevron-left"></i>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+    </section>
+
+    <!-- Why Students Trust Us Section -->
+    <section class="trust-section">
+        <div class="trust-container">
+            
+            <!-- Left Side Content -->
+            <div class="trust-left">
+                <div class="certified-pill">
+                    <span class="check-circle"><i class="fa-solid fa-check"></i></span>
+                    <span>Guaranteed and Certified</span>
+                </div>
+                
+                <h2>Why Students Trust Us</h2>
+                
+                <p class="trust-desc">
+                    Train with experts and access placements, portfolios and 
+                    <span class="outline-pill">Interview Support.</span>
+                </p>
+
+                <div class="trust-experts">
+                    <div class="avatar-stack">
+                        <img src="https://mamotechnolabs.com/images/monicamam.png" alt="User 1">
+                        <img src="https://mamotechnolabs.com/images/manoharsir.png" alt="User 2">
+                    </div>
+                    <span class="expert-label">Courses from <strong>experts.</strong></span>
+                </div>
+            </div>
+
+            <!-- Right Side 2x2 Grid Cards -->
+            <div class="trust-right">
+                
+                <!-- Card 1 -->
+            <div class="trust-card bg-green">
+                <div class="card-header">
+                    <span class="stat-num" data-target="95" data-suffix="%">0%</span>
+                    <span class="stat-title">Placement Ratio</span>
+                </div>
+                <p class="card-text">Job-focused training that gets real results.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="trust-card bg-light">
+                <div class="card-header">
+                    <span class="stat-num" data-target="100" data-suffix="+">0+</span>
+                    <span class="stat-title">Company Tie Ups</span>
+                </div>
+                <p class="card-text">Strong hiring network for faster placements.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="trust-card bg-light">
+                <div class="card-header">
+                    <span class="stat-num" data-target="12" data-suffix="+">0+</span>
+                    <span class="stat-title">Years Training</span>
+                </div>
+                <p class="card-text">Trusted training backed by a decade of success.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="trust-card bg-green">
+                <div class="card-header">
+                    <span class="stat-num" data-target="0" data-suffix="%">0%</span>
+                    <span class="stat-title">No-Cost EMI</span>
+                </div>
+                <p class="card-text">Learn now, pay later with easy monthly plans.</p>
+            </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Hiring Partners Section -->
+    <section class="hiring-partners-section">
+        <h2 class="partners-heading">Hiring Partners</h2>
+        
+        <div class="partners-slider-container">
+            <!-- Left Arrow Button -->
+            <button class="arrow-btn left-arrow" aria-label="Previous">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <!-- Partners Track / Grid -->
+            <div class="partners-track">
+                
+                <!-- Partner 1: Mastercard -->
+                <div class="partner-item">
+                    <div class="logo-mastercard">
+                        <div class="mc-circles">
+                            <span class="mc-red"></span>
+                            <span class="mc-yellow"></span>
+                        </div>
+                        <span class="mc-text">mastercard</span>
+                    </div>
+                </div>
+
+                <!-- Partner 2: Rishabh Software -->
+                <div class="partner-item">
+                    <div class="logo-rishabh">
+                        <div class="rishabh-icon">R</div>
+                        <div class="rishabh-text">
+                            <span class="rishabh-main">RISHABH<sup>®</sup></span>
+                            <span class="rishabh-sub">SOFTWARE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partner 3: Mysphere Infotech -->
+                <div class="partner-item">
+                    <div class="logo-mysphere">
+                        <span class="mysphere-globe">🌐</span>
+                        <div class="mysphere-text">
+                            <span class="mysphere-main">Mysphere</span>
+                            <span class="mysphere-sub">INFOTECH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partner 4: Webmyne -->
+                <div class="partner-item">
+                    <div class="logo-webmyne">
+                        <span class="webmyne-main"><span class="red-w">W</span>ebmyne</span>
+                        <span class="webmyne-sub">Endless possibilities through turnkey solutions</span>
+                    </div>
+                </div>
+
+                <!-- Partner 5: NetWeb Software -->
+                <div class="partner-item">
+                    <div class="logo-netweb">
+                        <div class="netweb-icon">n</div>
+                        <span class="netweb-main">NetWeb Software</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Arrow Button -->
+            <button class="arrow-btn right-arrow" aria-label="Next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Still Confused Section -->
+    <section class="confused-section">
+        <div class="confused-container">
+            
+            <!-- Left Side: Student Graphic -->
+            <div class="confused-left">
+                <img src="https://www.vtechlabs.com/wp-content/uploads/2026/04/student.png" alt="Confused Student">
+            </div>
+
+            <!-- Right Side: Heading & Form -->
+            <div class="confused-right">
+                <h2 class="confused-title">
+                    Still Confused? <br>
+                    Let’s Talk.
+                </h2>
+
+                <form class="confused-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <input type="tel" placeholder="Contact Number" required>
+                        <select required>
+                            <option value="" disabled selected>Select Training</option>
+                            <option value="python">Advanced Python</option>
+                            <option value="ai">Generative AI</option>
+                            <option value="web">Full Stack Web Dev</option>
+                        </select>
+                    </div>
+
+                    <!-- Mock reCAPTCHA Box -->
+                    <div class="recaptcha-row">
+                        <div class="recaptcha-box">
+                            <div class="recaptcha-content">
+                                <input type="checkbox" id="robot-check">
+                                <label for="robot-check">I'm not a robot</label>
+                            </div>
+                            <div class="recaptcha-brand">
+                                <i class="fa-solid fa-rotate-right"></i>
+                                <span>reCAPTCHA</span>
+                                <small>Privacy - Terms</small>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-book">BOOK FREE COUNSELLING</button>
+                    
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Column 1: Logo, Copyright, Socials, & QR Code -->
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <span class="v-green">Mamo</span>Techno<span class="labs-white">Labs</span>
+                </div>
+                <p class="copyright-text">© 2026 By VTechLabs</p>
+                <div class="footer-divider"></div>
+
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+                <!-- Scan and Review QR Code Area -->
+                <div class="qr-section">
+                    <span class="qr-title">Scan And Review</span>
+                    <div class="qr-box">
+                        <!-- Mock QR code image or generated SVG placeholder -->
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://vtechlabs.com" alt="QR Code">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Trending Course Links -->
+            <div class="footer-col">
+                <h3 class="footer-heading">Trending Course</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Prompt Engineering</a></li>
+                    <li><a href="#">Artificial Intelligence</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">UI UX Design</a></li>
+                    <li><a href="#">Data Science</a></li>
+                    <li><a href="#">Automation Testing</a></li>
+                    <li><a href="#">Tableau</a></li>
+                    <li><a href="#">All Courses</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Information Links -->
+            <div class="footer-col">
+                <h3 class="footer-heading">Information</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Hire IT Students</a></li>
+                    <li><a href="#">Corporate Training</a></li>
+                    <li><a href="#">Internship</a></li>
+                    <li><a href="#">Job Consultancy</a></li>
+                    <li><a href="#">Industrial Visit</a></li>
+                    <li><a href="#">Training Infrastructure</a></li>
+                    <li><a href="#">CodeSprint 2024</a></li>
+                    <li><a href="#">Student Testimonials</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Us Details -->
+            <div class="footer-col contact-col">
+                <h3 class="footer-heading">Contact Us</h3>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919427602525">+91 94276 02525</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://whatsapp.com" target="_blank">+91 97254 52141</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:training@vtechlabs.com">training@vtechlabs.com</a>
+                    </li>
+                    <li class="address-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>801, Ivory Terrace,<br>R.C. Dutt Road,<br>Vadodara-07, Gujarat</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Icon -->
+<a href="https://wa.me/919325910095?text=Hello,%20I%20want%20to%20know%20more%20about%20your%20IT%20courses." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script src="view-course.js"></script>
+</body>
+</html>

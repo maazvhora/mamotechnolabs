@@ -8,8 +8,8 @@
 body {
     background-color: #0b132b;
     color: #ffffff;
-    padding: 85px 0 0 0; /* Navbar ke liye space */
     margin: 0; /* Body ke default margin ko remove karne ke liye */
+    padding: 85px 0 0 0; /* Navbar ke liye space */
 }
 
 html {
@@ -172,6 +172,7 @@ html {
 /* Hero Section */
 .hero-section {
     display: flex;
+    flex-direction: column; /* Forces vertical stacking */
     justify-content: center;
     align-items: center;
     padding: 60px 5% 0 5%;
@@ -180,611 +181,351 @@ html {
     overflow: hidden;
     min-height: 550px;
     background-image: url('https://www.vtechlabs.com/wp-content/themes/VTechLabs/assets/images/home-banner-bg.png');
+    background-size: cover;
+    background-position: center;
 }
 
-/* Banner Content ("About Us") */
+/* Banner Content */
 .banner-content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  width: 100%;
   padding: 80px 0;
 }
 
 .banner-content h1 {
-  font-family: 'Georgia', serif; /* Gives the classic serif look */
+  font-family: 'Georgia', serif; 
   font-size: 70px;
-  font-weight: 900;
+  font-weight: 300;
   letter-spacing: 1px;
   margin: 0;
   color: #ffffff;
+  display: flex;
+  flex-direction: column; /* Forces the two spans to stack on separate lines */
+  gap: 10px;              /* Adds breathing room between the lines */
 }
 
 .highlight-text {
-  color: #ffe600; /* Yellow accent for "Us" */
+  color: #ffe600; /* Yellow accent */
   font-style: italic;
+  font-weight: 400;
 }
 
-/* project-training-section  */
 
-.project-training-section {
-  background-color: #ffffff;
-  padding: 90px 6%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+/* trending-courses-section  */
 
-.project-training-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
-/* Left Single Image Wrapper */
-.project-training-image-single {
-  flex: 1;
-}
-
-.project-training-image-single img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-  object-fit: cover;
-}
-
-/* Right Content Column */
-.project-training-content {
-  flex: 1.2;
-}
-
-/* Green Outline Pill Badge */
-.learn-badge {
-  display: inline-block;
-  background: transparent;
-  border: 1.5px solid #20c997;
-  color: #20c997;
-  padding: 6px 18px;
-  border-radius: 30px;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.project-training-content h2 {
-  font-family: 'Georgia', serif;
-  font-size: 42px;
-  font-weight: 500;
-  color: #3f1dcb; /* Deep purple heading */
-  line-height: 1.3;
-  margin-bottom: 25px;
-}
-
-.project-training-content p {
-  font-size: 15px;
-  line-height: 1.7;
-  color: #333333;
-  margin-bottom: 20px;
-}
-
-.project-training-content p:last-child {
-  margin-bottom: 0;
-}
-
-/* Responsive design for tablets and mobile */
-@media (max-width: 968px) {
-  .project-training-container {
-    flex-direction: column;
-  }
-}
-
-/* What We Provide Section */
-
-.what-we-provide-section {
-  background-color: #ffffff;
-  padding: 80px 5%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-}
-
-.provide-header {
-  margin-bottom: 50px;
-}
-
-.provide-header h2 {
-  font-family: 'Georgia', serif;
-  font-size: 42px;
-  font-weight: 500;
-  color: #10b981; /* Vibrant teal/green heading */
-  margin: 0;
-}
-
-.features-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
-
-.feature-card {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  text-align: left;
-}
-
-.feature-icon {
-  font-size: 38px;
-  color: #3f1dcb; /* Deep purple icon color */
-}
-
-.feature-text p {
-  font-size: 15px;
-  font-weight: 600;
-  color: #111111;
-  line-height: 1.4;
-  margin: 0;
-}
-
-/* Responsive design for tablets and mobile */
-@media (max-width: 968px) {
-  .features-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-}
-
-/* Overlapping Ribbons Styling (Forced Normal Background) */
-.ribbon-container {
-  position: relative !important;
-  height: 60px !important;
-  overflow: visible !important;
-  z-index: 10 !important;
-}
-
-.ribbon {
-  position: absolute !important;
-  width: 105% !important;
-  left: -10px !important;
-  padding: 12px 0 !important;
-  white-space: nowrap !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
-  background: none !important; /* Kisi bhi purane background ko hatane ke liye */
-}
-
-/* Strict Deep Purple Background */
-.purple-ribbon {
-  background-color: #2b1b66 !important; 
-  color: #ffffff !important;
-  transform: rotate(-3deg) !important;
-  z-index: 12 !important;
-  top: 0 !important;
-}
-
-/* Strict Teal / Green Background */
-.teal-ribbon {
-  background-color: #10b981 !important; 
-  color: #ffffff !important;
-  transform: rotate(2deg) !important;
-  z-index: 11 !important;
-  top: 14px !important;
-}
-
-.ribbon-track {
-  display: inline-block !important;
-  animation: scrollRibbon 20s linear infinite !important;
-  font-weight: 700 !important;
-  font-size: 15px !important;
-  letter-spacing: 2px !important;
-  color: #ffffff !important;
-}
-
-@keyframes scrollRibbon {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-/* Start Learning Section Styling */
-.start-learning-section {
+.trending-courses-section {
   background: linear-gradient(135deg, #f5faeb 0%, #d8ebd4 100%);
-  padding: 80px 8% 90px 8%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-.form-header {
-  margin-bottom: 40px;
-}
-
-.form-header h2 {
-  font-family: 'Georgia', serif;
-  font-size: 42px;
-  font-weight: 500;
-  color: #3f1dcb;
-  margin-bottom: 8px;
-}
-
-.form-header p {
-  font-size: 16px;
-  color: #333333;
-  margin: 0;
-}
-
-.learning-form {
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.form-row {
-  display: flex;
-  gap: 20px;
-}
-
-.form-group {
-  flex: 1;
-}
-
-.form-group input,
-.form-group select {
-  width: 100%;
-  padding: 16px 20px;
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  font-size: 15px;
-  color: #111111;
-  outline: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
-  transition: border-color 0.2s;
-}
-
-.form-group input:focus,
-.form-group select:focus {
-  border-color: #3f1dcb;
-}
-
-.captcha-row {
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-.recaptcha-box {
-  background: #f9f9f9;
-  border: 1px solid #d3d3d3;
-  border-radius: 4px;
-  padding: 10px 14px;
-  width: 280px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.recaptcha-inner {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.recaptcha-inner input[type="checkbox"] {
-  width: 22px;
-  height: 22px;
-  cursor: pointer;
-}
-
-.recaptcha-inner label {
-  font-size: 14px;
-  color: #222222;
-  cursor: pointer;
-}
-
-.recaptcha-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 9px;
-  color: #555555;
-}
-
-.recaptcha-logo img {
-  width: 24px;
-  height: 24px;
-  margin-bottom: 2px;
-}
-
-.submit-group {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.submit-btn {
-  background-color: #3f1dcb;
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  padding: 16px 40px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(63, 29, 203, 0.3);
-  transition: background-color 0.2s, transform 0.2s;
-}
-
-.submit-btn:hover {
-  background-color: yellow;
-  color: #000000;
-}
-
-/* full-benefits-training-section */
-
-.full-benefits-training-section{
-    background-color: white;
-}
-
-/* benefits-training-section */
-.benefits-training-section {
-  background: linear-gradient(135deg, #2b1b66 0%, #170d3f 100%);
-  padding: 90px 6%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #ffffff;
-  border-radius: 25px;
-}
-
-.benefits-training-container {
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
-.benefits-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.benefits-header h2 {
-  font-family: 'Georgia', serif;
-  font-size: 42px;
-  font-weight: 500;
-  color: #facc15; /* Golden-yellow accent color */
-  margin-bottom: 15px;
-}
-
-.benefits-header p {
-  font-size: 16px;
-  color: #e2e8f0;
-  margin: 0;
-}
-
-/* Two Column Layout with Center Dotted Divider */
-.benefits-grid-two-col {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-  position: relative;
-}
-
-/* Vertical Dotted Divider Line in the Middle */
-.benefits-grid-two-col::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 1px;
-  border-left: 2px dotted rgba(255, 255, 255, 0.3);
-  transform: translateX(-50%);
-}
-
-.benefits-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 45px;
-  padding: 0 15px;
-}
-
-.benefit-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-}
-
-.benefit-icon {
-  background-color: #10b981; /* Green checkmark background badge */
-  color: #ffffff;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  flex-shrink: 0;
-  margin-top: 3px;
-}
-
-.benefit-text h4 {
-  font-size: 16px;
-  font-weight: 700;
-  color: #facc15; /* Golden-yellow subheading for titles */
-  margin: 0 0 10px 0;
-  line-height: 1.4;
-}
-
-.benefit-text p {
-  font-size: 14px;
-  line-height: 1.7;
-  color: #e2e8f0;
-  margin: 0;
-}
-
-/* Responsive design for tablets and mobile */
-@media (max-width: 968px) {
-  .benefits-grid-two-col {
-    flex-direction: column;
-    gap: 40px;
-  }
-  .benefits-grid-two-col::after {
-    display: none; /* Hide vertical line on smaller screens */
-  }
-}
-
-/* success-tips-section */
-
-.success-tips-section {
-  background-color: #ffffff;
-  padding: 90px 8%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.success-tips-container {
-  max-width: 1150px;
-  margin: 0 auto;
-}
-
-/* Heading Styling */
-.success-tips-section h2 {
-  font-family: 'Georgia', serif;
-  font-size: 42px;
-  font-weight: 500;
-  color: #3f1dcb; /* Deep purple heading */
-  margin-bottom: 20px;
-  line-height: 1.3;
-}
-
-/* Intro Paragraph */
-.section-intro {
-  font-size: 15px;
-  line-height: 1.7;
-  color: #222222;
-  font-weight: 600;
-  margin-bottom: 40px;
-}
-
-/* Tips List */
-.tips-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.tips-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-}
-
-.tip-icon {
-  background-color: #10b981; /* Green checkmark icon background */
-  color: #ffffff;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 11px;
-  flex-shrink: 0;
-  margin-top: 3px;
-}
-
-.tip-text {
-  font-size: 15px;
-  line-height: 1.7;
-  color: #333333;
-}
-
-.tip-text strong {
-  color: #3f1dcb; /* Highlighted tip titles in deep purple */
-  font-weight: 700;
-}
-
-/* req-training-section */
-
-.req-training-section, .conclusion-section {
-  background-color: #ffffff;
   padding: 80px 6%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.req-training-container, .conclusion-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-  max-width: 1300px;
+.courses-container {
+  max-width: 1400px;
   margin: 0 auto;
+  text-align: center;
 }
 
-/* Image Styling */
-.req-training-image, .conclusion-image {
+.courses-container > h2 {
+  font-family: 'Georgia', serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: #2b1b66;
+  margin-bottom: 15px;
+}
+
+.section-subtitle {
+  font-size: 14.5px;
+  color: #475569;
+  max-width: 850px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+}
+
+/* Layout Grid */
+.courses-main-layout {
+  display: flex;
+  gap: 35px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* Sidebar */
+.courses-sidebar {
+  width: 270px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.courses-search-box {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.courses-search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+.courses-search-box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+}
+
+.filter-group {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.filter-group h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2b1b66;
+  margin: 0 0 12px 0;
+}
+
+.filter-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+  color: #334155;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.courses-reset-btn {
+  background-color: #2b1b66;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.courses-reset-btn:hover {
+  background-color: #3f1dcb;
+}
+
+/* Sidebar Demo Promo Box */
+.sidebar-demo-box {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 12px;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.sidebar-demo-box h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+
+.sidebar-demo-box p {
+  font-size: 13px;
+  margin: 0 0 15px 0;
+  opacity: 0.9;
+}
+
+.demo-btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #065f46;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13.5px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Area */
+.courses-content-area {
   flex: 1;
 }
 
-.req-training-image img, .conclusion-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-  object-fit: cover;
-}
-
-/* Content Styling */
-.req-training-content, .conclusion-content {
-  flex: 1.2;
-}
-
-.req-training-content h2, .conclusion-content h2 {
-  font-family: 'Georgia', serif;
-  font-size: 38px;
-  font-weight: 500;
-  color: #10b981; /* Vibrant teal/green heading matching screenshot */
-  line-height: 1.3;
-  margin-bottom: 25px;
-}
-
-.conclusion-content h2 {
-  color: #3f1dcb; /* Deep purple heading for conclusion */
-}
-
-.req-training-content p, .conclusion-content p {
-  font-size: 15px;
-  line-height: 1.7;
-  color: #333333;
-  margin-bottom: 18px;
-}
-
-.cost-note {
+.courses-count-label {
+  font-size: 13px;
+  color: #64748b;
   font-weight: 600;
-  color: #111111;
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-/* Responsive design for tablets/mobile */
-@media (max-width: 968px) {
-  .req-training-container, .conclusion-container {
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.course-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card-img {
+  height: 160px;
+  position: relative;
+  padding: 15px;
+  display: flex;
+  align-items: flex-end;
+  color: #ffffff;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card Mock Background Colors/Gradients */
+.bg-python { background: linear-gradient(135deg, #1e293b 0%, #3b82f6 100%); }
+.bg-ai-tools { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); }
+.bg-aws { background: linear-gradient(135deg, #d97706 0%, #b45309 100%); }
+.bg-content { background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); }
+.bg-cyber { background: linear-gradient(135deg, #111827 0%, #1f2937 100%); }
+.bg-business { background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%); }
+.bg-angular { background: linear-gradient(135deg, #be123c 0%, #9f1239 100%); }
+.bg-java { background: linear-gradient(135deg, #0f172a 0%, #334155 100%); }
+.bg-genai { background: linear-gradient(135deg, #831843 0%, #500724 100%); }
+
+.badge-tag {
+  position: absolute;
+  top: 12px;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.new-tag { right: 12px; background-color: #3b82f6; color: #ffffff; }
+.trending-tag { left: 12px; background-color: #ef4444; color: #ffffff; }
+
+.course-card-img h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  z-index: 2;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.course-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.course-card-body p {
+  font-size: 13.5px;
+  color: #475569;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+.course-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #64748b;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 12px;
+}
+
+.course-card-footer i {
+  color: #2b1b66;
+  font-size: 16px;
+}
+
+/* Pagination */
+.courses-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.page-btn {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+}
+
+.page-btn.active {
+  background-color: #2b1b66;
+  color: #ffffff;
+  border-color: #2b1b66;
+}
+
+.page-dots {
+  color: #64748b;
+}
+
+.page-nav-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #2b1b66;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .courses-main-layout {
     flex-direction: column;
   }
-  .conclusion-container {
-    flex-direction: column-reverse; /* Keeps image order correct on mobile if needed */
+  .courses-sidebar {
+    width: 100%;
+  }
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 600px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* full full-testimonials Main Section Layout */
 
@@ -1050,144 +791,399 @@ html {
     }
 }
 
-/* passion section*/
-.passion-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 80px 6%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  gap: 50px;
+/* Main Section Layout */
+.trust-section {
+    padding: 80px 6%;
+    background-color: #ffffff;
 }
 
-/* Left Column Styling */
-.passion-left {
-  flex: 1.1;
+.trust-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
-.badge-pill {
-  display: inline-block;
-  background: transparent;
-  border: 1.5px solid #20c997;
-  padding: 6px 18px;
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #111;
-  margin-bottom: 20px;
+/* Left Column Styles */
+.trust-left {
+    flex: 1;
+    max-width: 450px;
 }
 
-.passion-left h2 {
-  font-family: 'Georgia', serif;
-  font-size: 42px;
-  font-weight: 500;
-  color: #20c997;
-  margin-bottom: 30px;
+.certified-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f0fdf4;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #166534;
+    margin-bottom: 20px;
 }
 
-.quote-box {
-  background: #ffffff;
-  border: 1px solid #edf2f7;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-  border-radius: 16px;
-  padding: 35px;
-  position: relative;
+.check-circle {
+    background-color: #22c55e;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
 }
 
-.quote-icon {
-  font-size: 32px;
-  color: #3f1dcb;
-  margin-bottom: 15px;
-  display: block;
+.trust-left h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #1e1b4b;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
 }
 
-.quote-box p {
-  font-size: 15px;
-  line-height: 1.7;
-  color: #2c2c2c;
-  margin: 0;
+.trust-desc {
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 30px;
 }
 
-/* Right Column Grid Layout */
-.passion-right {
-  flex: 1.1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.outline-pill {
+    display: inline-block;
+    border: 2px solid #22c55e;
+    color: #111827;
+    padding: 3px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    vertical-align: middle;
+    margin-top: 4px;
 }
 
-.grid-row {
-  display: flex;
-  gap: 20px;
+.trust-experts {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-/* Pure Image Container */
-.image-box {
-  flex: 1;
-  height: 220px;
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+.avatar-stack {
+    display: flex;
 }
 
-.image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.avatar-stack img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    margin-left: -12px;
 }
 
-/* careers-banner-section */
-.careers-banner-section {
-  background-color: #ffffff;
-  padding: 60px 20px;
-  overflow: hidden;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
+.avatar-stack img:first-child {
+    margin-left: 0;
 }
 
-.careers-banner-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  height: 100px;
+.expert-label {
+    font-size: 15px;
+    color: #374151;
 }
 
-/* Background Faint Watermark Text */
-.watermark-bg {
-  position: absolute;
-  font-size: 85px;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.03); /* Bahut hi halka transparent text */
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  white-space: nowrap;
-  user-select: none;
-  z-index: 1;
+/* Right Column 2x2 Grid Styles */
+.trust-right {
+    flex: 1.3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-/* Foreground Bold Text */
-.foreground-text {
-  position: relative;
-  font-size: 32px;
-  font-weight: 700;
-  color: #111111;
-  z-index: 2;
-  letter-spacing: 0.5px;
+.trust-card {
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.trust-card:hover {
+    transform: translateY(-6px); /* Lifts the card slightly upwards */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08); /* Adds a soft professional shadow */
 }
 
-/* Responsive design for mobile screens */
-@media (max-width: 768px) {
-  .watermark-bg {
-    font-size: 40px;
-  }
-  .foreground-text {
-    font-size: 22px;
-  }
+.bg-green {
+    background-color: #f0fdf4;
+}
+
+.bg-light {
+    background-color: #f8fafc;
+}
+
+.card-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.stat-num {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1e1b4b;
+}
+
+.stat-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e1b4b;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.4;
+}
+
+/* Responsive design adjustment */
+@media (max-width: 900px) {
+    .trust-container {
+        flex-direction: column;
+    }
+    .trust-right {
+        width: 100%;
+    }
+}
+
+/* Hiring Partners Section */
+.hiring-partners-section {
+    padding: 70px 5%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.partners-heading {
+    font-size: 38px;
+    font-weight: 800;
+    color: #2dd4bf; /* Mint green color matching the design */
+    margin-bottom: 50px;
+    letter-spacing: -0.5px;
+}
+
+.partners-slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* Arrow Buttons */
+.arrow-btn {
+    background-color: #f0fdf4;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #1e1b4b;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+    z-index: 10;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+.arrow-btn:hover {
+    background-color: #dcfce7;
+}
+
+/* Partners Logo Track */
+.partners-track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.partners-track::-webkit-scrollbar {
+    display: none;
+}
+
+.partner-item {
+    flex: 1;
+    min-width: 170px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo Design Recreations */
+
+/* 1. Mastercard */
+.logo-mastercard {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.mc-circles {
+    display: flex;
+    position: relative;
+    width: 36px;
+    height: 22px;
+}
+.mc-red {
+    width: 22px;
+    height: 22px;
+    background-color: #eb001b;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+}
+.mc-yellow {
+    width: 22px;
+    height: 22px;
+    background-color: #f79e1b;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    mix-blend-mode: multiply;
+}
+.mc-text {
+    font-size: 19px;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -0.5px;
+}
+
+/* 2. Rishabh Software */
+.logo-rishabh {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.rishabh-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #0f172a;
+    color: white;
+    font-weight: 900;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.rishabh-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1;
+}
+.rishabh-main {
+    font-size: 14px;
+    font-weight: 900;
+    color: #0f172a;
+    letter-spacing: 0.5px;
+}
+.rishabh-sub {
+    font-size: 9px;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+/* 3. Mysphere Infotech */
+.logo-mysphere {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.mysphere-globe {
+    font-size: 24px;
+}
+.mysphere-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1;
+}
+.mysphere-main {
+    font-size: 15px;
+    font-weight: 800;
+    color: #1e3a8a;
+}
+.mysphere-sub {
+    font-size: 8px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+/* 4. Webmyne */
+.logo-webmyne {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.webmyne-main {
+    font-size: 20px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+}
+.red-w {
+    color: #ef4444;
+}
+.webmyne-sub {
+    font-size: 7px;
+    color: #4b5563;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* 5. NetWeb Software */
+.logo-netweb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.netweb-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #22c55e;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.netweb-main {
+    font-size: 14px;
+    font-weight: 800;
+    color: #000000;
+    letter-spacing: -0.3px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .partners-track {
+        justify-content: flex-start;
+    }
 }
 
 /* Section Wrapper */
