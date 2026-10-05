@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #0b132b;
-    color: #ffffff;
+    background-color: #F7F5F0;
+    color: #0f2410;
     margin: 0; /* Body ke default margin ko remove karne ke liye */
     padding: 85px 0 0 0; /* Navbar ke liye space */
 }
@@ -29,7 +29,6 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
-  background: transparent linear-gradient(248deg, #312393 0%, #1f2740 100%) 0% 0% no-repeat;
   
   /* Koi transition ya animation nahi hai */
 }
@@ -42,14 +41,10 @@ html {
 }
 
 .brand-logo {
-    width: 80px;         /* Adjust the size of your image here */
+    width: 250px;         /* Adjust the size of your image here */
     height: auto;
 }
 
-.brand-text {
-    display: flex;
-    flex-direction: column; /* Stack "Mamo" and "Techno Labs" vertically */
-}
 
 .brand-link {
   text-decoration: none;
@@ -58,19 +53,7 @@ html {
   cursor: pointer;
 }
 
-.sub-title {
-    color: #2dd4bf;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1;
-}
 
-.main-title {
-    font-size: 32px;
-    font-weight: 300;
-    color: #ffffff;
-    margin: 0;
-}
 
 .nav-links {
     display: flex;
@@ -79,14 +62,14 @@ html {
 
 .nav-links a {
     text-decoration: none;
-    color: #e2e8f0;
+    color: #a7f3d0;
     font-weight: 600;
     font-size: 14px;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #4ade80;
+    color: #16a34a;
 }
 
 .nav-links i {
@@ -102,8 +85,8 @@ html {
 
 .btn-skill {
     background: transparent;
-    border: 2px solid #facc15;
-    color: #facc15;
+    border: 2px solid #16a34a;
+    color: #16a34a;
     padding: 8px 18px;
     border-radius: 30px;
     text-decoration: none;
@@ -112,8 +95,8 @@ html {
 }
 
 .btn-hire {
-    background: #facc15;
-    color: #000000;
+    background: #16a34a;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 30px;
     text-decoration: none;
@@ -133,7 +116,7 @@ html {
     visibility: hidden;
     transform: translateY(10px); /* Thoda sa niche se slide hote hue aayega */
     position: absolute;
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     min-width: 260px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
@@ -146,7 +129,7 @@ html {
 
 /* Dropdown Links Styling */
 .dropdown-content a {
-    color: #111111 !important;
+    color: #0f2410 !important;
     padding: 12px 22px;
     text-decoration: none;
     display: block;
@@ -158,8 +141,8 @@ html {
 
 /* Hover Effect on Dropdown Items */
 .dropdown-content a:hover {
-    background-color: #f3f4f8;
-    color: #3f1dcb !important;
+    background-color: #ecfdf5;
+    color: #166534 !important;
 }
 
 /* Show Dropdown Smoothly on Mouse Hover */
@@ -175,11 +158,9 @@ html {
     justify-content: center;
     align-items: center;
     padding: 60px 5% 0 5%;
-    background: transparent linear-gradient(248deg, #312393 0%, #1f2740 100%) 0% 0% no-repeat;
     position: relative;
     overflow: hidden;
     min-height: 550px;
-    background-image: url('https://www.vtechlabs.com/wp-content/themes/VTechLabs/assets/images/home-banner-bg.png');
 }
 
 /* Banner Content ("About Us") */
@@ -196,13 +177,12 @@ html {
   font-weight: 900;
   letter-spacing: 1px;
   margin: 0;
-  color: #ffffff;
 }
 
 /* blogs-section */
 
 .blogs-section {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   padding: 80px 6%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
@@ -217,7 +197,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 42px;
   font-weight: 500;
-  color: #3f1dcb; /* Deep purple heading */
+  color: #166534; /* Deep purple heading */
   margin-bottom: 30px;
 }
 
@@ -231,7 +211,7 @@ html {
 }
 
 .blog-pill {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   color: #333333;
   border: 1px solid #d1d5db;
   padding: 8px 18px;
@@ -243,9 +223,9 @@ html {
 }
 
 .blog-pill:hover, .blog-pill.active {
-  background-color: #3f1dcb;
-  color: #ffffff;
-  border-color: #3f1dcb;
+  background-color: #166534;
+  color:#ffffff;
+  border-color: #ffffff;
 }
 
 /* Blog Cards Grid */
@@ -257,7 +237,7 @@ html {
 }
 
 .blog-card {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
@@ -304,7 +284,7 @@ html {
 .blog-content h3 {
   font-size: 17px;
   font-weight: 700;
-  color: #111111;
+  color: #0f2410;
   line-height: 1.4;
   margin-bottom: 25px;
 }
@@ -319,8 +299,8 @@ html {
 
 .read-more-btn {
   background-color: transparent;
-  color: #3f1dcb; /* Deep purple button outline style */
-  border: 1.5px solid #3f1dcb;
+  color: #166534; /* Deep purple button outline style */
+  border: 1.5px solid #166534;
   padding: 8px 18px;
   border-radius: 20px;
   font-size: 13px;
@@ -330,8 +310,8 @@ html {
 }
 
 .read-more-btn:hover {
-  background-color: #3f1dcb;
-  color: #ffffff;
+  background-color: #166534;
+  color:#ffffff;
 }
 
 .blog-date {
@@ -351,9 +331,9 @@ html {
 }
 
 .page-num, .page-next {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   color: #333333;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #bbf7d0;
   padding: 8px 14px;
   border-radius: 6px;
   font-size: 14px;
@@ -363,9 +343,9 @@ html {
 }
 
 .page-num.active, .page-num:hover, .page-next:hover {
-  background-color: #3f1dcb;
-  color: #ffffff;
-  border-color: #3f1dcb;
+  background-color: #166534;
+  color:#ffffff;
+  border-color: #ffffff;
 }
 
 .dots {
@@ -405,7 +385,7 @@ html {
 .footer-heading {
     font-size: 24px;
     font-weight: 700;
-    color: #facc15; /* Yellow/Gold accent matching screenshot */
+    color: #16a34a; /* Yellow/Gold accent matching screenshot */
     margin-bottom: 25px;
     font-family: serif; /* Gives the classic editorial serif feel */
 }
@@ -462,7 +442,7 @@ html {
 }
 
 .social-icons a:hover {
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     color: #161616;
     border-color: #ffffff;
 }
@@ -481,7 +461,7 @@ html {
 }
 
 .qr-box {
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     width: 115px;
     height: 115px;
     padding: 6px;
@@ -507,7 +487,7 @@ html {
 
 .footer-links li a {
     text-decoration: none;
-    color: #cbd5e1;
+    color: #a7f3d0;
     font-size: 14px;
     transition: color 0.2s;
 }
@@ -529,18 +509,18 @@ html {
     align-items: flex-start;
     gap: 12px;
     font-size: 14px;
-    color: #cbd5e1;
+    color: #a7f3d0;
 }
 
 .contact-list li i {
-    color: #facc15;
+    color: #16a34a;
     font-size: 16px;
     margin-top: 3px;
 }
 
 .contact-list li a {
     text-decoration: none;
-    color: #cbd5e1;
+    color: #a7f3d0;
     transition: color 0.2s;
 }
 

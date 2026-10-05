@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #0b132b;
-    color: #ffffff;
+    background-color: #F7F5F0;
+    color: #0f2410;
     padding-top: 85px; /* Navbar ke liye space */
     margin: 0; /* Body ke default margin ko remove karne ke liye */
 }
@@ -29,7 +29,6 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
-  background: transparent linear-gradient(248deg, #312393 0%, #1f2740 100%) 0% 0% no-repeat;
   
   /* Koi transition ya animation nahi hai */
 }
@@ -42,14 +41,10 @@ html {
 }
 
 .brand-logo {
-    width: 80px;         /* Adjust the size of your image here */
+    width: 250px;         /* Adjust the size of your image here */
     height: auto;
 }
 
-.brand-text {
-    display: flex;
-    flex-direction: column; /* Stack "Mamo" and "Techno Labs" vertically */
-}
 
 .brand-link {
   text-decoration: none;
@@ -58,19 +53,6 @@ html {
   cursor: pointer;
 }
 
-.sub-title {
-    color: #2dd4bf;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1;
-}
-
-.main-title {
-    font-size: 32px;
-    font-weight: 300;
-    color: #ffffff;
-    margin: 0;
-}
 
 .nav-links {
     display: flex;
@@ -79,14 +61,14 @@ html {
 
 .nav-links a {
     text-decoration: none;
-    color: #e2e8f0;
+    color: #a7f3d0;
     font-weight: 600;
     font-size: 14px;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #4ade80;
+    color: #16a34a;
 }
 
 .nav-links i {
@@ -102,8 +84,8 @@ html {
 
 .btn-skill {
     background: transparent;
-    border: 2px solid #facc15;
-    color: #facc15;
+    border: 2px solid #16a34a;
+    color: #16a34a;
     padding: 8px 18px;
     border-radius: 30px;
     text-decoration: none;
@@ -112,8 +94,8 @@ html {
 }
 
 .btn-hire {
-    background: #facc15;
-    color: #000000;
+    background: #16a34a;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 30px;
     text-decoration: none;
@@ -133,7 +115,7 @@ html {
     visibility: hidden;
     transform: translateY(10px); /* Thoda sa niche se slide hote hue aayega */
     position: absolute;
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     min-width: 260px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
@@ -146,7 +128,7 @@ html {
 
 /* Dropdown Links Styling */
 .dropdown-content a {
-    color: #111111 !important;
+    color: #0f2410 !important;
     padding: 12px 22px;
     text-decoration: none;
     display: block;
@@ -158,8 +140,8 @@ html {
 
 /* Hover Effect on Dropdown Items */
 .dropdown-content a:hover {
-    background-color: #f3f4f8;
-    color: #3f1dcb !important;
+    background-color: #ecfdf5;
+    color: #166534 !important;
 }
 
 /* Show Dropdown Smoothly on Mouse Hover */
@@ -175,11 +157,9 @@ html {
     justify-content: center;
     align-items: center;
     padding: 60px 5% 0 5%;
-    background: transparent linear-gradient(248deg, #312393 0%, #1f2740 100%) 0% 0% no-repeat;
     position: relative;
     overflow: hidden;
     min-height: 550px;
-    background-image: url('https://www.vtechlabs.com/wp-content/themes/VTechLabs/assets/images/home-banner-bg.png');
 }
 
 /* Banner Content ("About Us") */
@@ -196,11 +176,10 @@ html {
   font-weight: 900;
   letter-spacing: 1px;
   margin: 0;
-  color: #ffffff;
 }
 
 .highlight-text {
-  color: #ffe600; /* Yellow accent for "Us" */
+  color: #16a34a; /* Yellow accent for "Us" */
   font-style: italic;
 }
 
@@ -225,18 +204,18 @@ html {
 .badge-pill {
   display: inline-block;
   background: transparent;
-  border: 1.5px solid #20c997; /* Soft green border */
+  border: 1.5px solid #16a34a; /* Soft green border */
   padding: 6px 16px;
   border-radius: 20px;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.5px;
-  color: #333;
+  color: #1a3320;
   margin-bottom: 20px;
 }
 
 .highlight-bg {
-  background-color: #b3e5fc; /* Light blue highlight behind 'KNOW' */
+  background-color: #bbf7d0; /* Light blue highlight behind 'KNOW' */
   padding: 2px 6px;
   border-radius: 4px;
 }
@@ -246,12 +225,12 @@ html {
   font-size: 44px;
   font-weight: 500;
   line-height: 1.25;
-  color: #111;
+  color: #1a3320;
   margin-bottom: 30px;
 }
 
 .purple-italic {
-  color: #3f1dcb; /* Deep purple color */
+  color: #166534; /* Deep purple color */
   font-style: italic;
   font-weight: 600;
 }
@@ -264,7 +243,7 @@ html {
 }
 
 .inquiry-btn {
-  background-color: #3f1dcb; /* Deep purple background */
+  background-color: #166534; /* Deep purple background */
   color: #ffffff;
   padding: 14px 32px;
   border-radius: 30px;
@@ -275,10 +254,11 @@ html {
   display: inline-block;
   box-shadow: 0 4px 15px rgba(63, 29, 203, 0.3);
   transition: background 0.2s;
+  color: #ffffff;
 }
 
 .inquiry-btn:hover {
-  background-color: yellow;
+  background-color: #dcfce7;
   color: #000000;
 }
 
@@ -287,7 +267,7 @@ html {
   bottom: -22px;
   right: -10px;
   font-size: 24px;
-  color: #111;
+  color: #1a3320;
   transform: rotate(-15deg);
   pointer-events: none;
 }
@@ -310,7 +290,7 @@ html {
 .about-right p {
   font-size: 16px;
   line-height: 1.7;
-  color: #2c2c2c;
+  color: #1a3320;
   margin-bottom: 24px;
 }
 
@@ -331,7 +311,7 @@ html {
 
 .card {
   flex: 1;
-  background: #ffffff;
+  background: #F7F5F0;
   padding: 40px;
   border-radius: 16px;
   border: none; /* Removed border lines completely */
@@ -361,14 +341,14 @@ html {
   font-family: 'Georgia', serif;
   font-size: 38px;
   font-weight: 500;
-  color: #3f1dcb;
+  color: #166534;
   margin-bottom: 24px;
 }
 
 .card p {
   font-size: 16px;
   line-height: 1.75;
-  color: #2c2c2c;
+  color: #1a3320;
   margin: 0;
 }
 
@@ -378,10 +358,10 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #24145e; /* Deep purple background matching the screenshot */
+  background-color: #166534; /* Deep purple background matching the screenshot */
   padding: 80px 6%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #ffffff;
+  color:#ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -396,7 +376,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 60px;
   font-weight: 500;
-  color: #ffe600; /* Yellow highlight for the heading */
+  color: #16a34a; /* Yellow highlight for the heading */
   margin-bottom: 35px;
 }
 
@@ -421,14 +401,14 @@ html {
 }
 
 .feature-title i {
-  color: #20c997; /* Teal/green checkmark */
+  color: #16a34a; /* Teal/green checkmark */
   font-size: 16px;
 }
 
 .feature-title h4 {
   font-size: 16px;
   font-weight: 600;
-  color: #ffe600; /* Yellow accent title matching the style */
+  color: #16a34a; /* Yellow accent title matching the style */
   margin: 0;
 }
 
@@ -460,7 +440,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   padding: 80px 6%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   gap: 50px;
@@ -474,12 +454,12 @@ html {
 .badge-pill {
   display: inline-block;
   background: transparent;
-  border: 1.5px solid #20c997;
+  border: 1.5px solid #16a34a;
   padding: 6px 18px;
   border-radius: 20px;
   font-size: 13px;
   font-weight: 600;
-  color: #111;
+  color: #1a3320;
   margin-bottom: 20px;
 }
 
@@ -487,13 +467,13 @@ html {
   font-family: 'Georgia', serif;
   font-size: 42px;
   font-weight: 500;
-  color: #20c997;
+  color: #16a34a;
   margin-bottom: 30px;
 }
 
 .quote-box {
-  background: #ffffff;
-  border: 1px solid #edf2f7;
+  background: #F7F5F0;
+  border: 1px solid #d1fae5;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   border-radius: 16px;
   padding: 35px;
@@ -502,7 +482,7 @@ html {
 
 .quote-icon {
   font-size: 32px;
-  color: #3f1dcb;
+  color: #166534;
   margin-bottom: 15px;
   display: block;
 }
@@ -510,7 +490,7 @@ html {
 .quote-box p {
   font-size: 15px;
   line-height: 1.7;
-  color: #2c2c2c;
+  color: #1a3320;
   margin: 0;
 }
 
@@ -546,7 +526,7 @@ html {
 /*full university Section Wrapper */
 .university-section {
     padding: 80px 6%;
-    background-color: #ffffff;
+    background-color: #F7F5F0;
 }
 
 .university-container {
@@ -566,7 +546,7 @@ html {
 .uni-title {
     font-size: 38px;
     font-weight: 900;
-    color: #2dd4bf; /* Mint green heading color matching screenshot */
+    color: #16a34a; /* Mint green heading color matching screenshot */
     line-height: 1.2;
     margin-bottom: 30px;
     letter-spacing: -0.5px;
@@ -579,7 +559,7 @@ html {
 }
 
 .uni-card {
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
@@ -602,20 +582,20 @@ html {
 .uni-logo-box {
     padding: 15px;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #F7F5F0;
 }
 
 .gsfc-text {
     font-size: 13px;
     font-weight: 900;
-    color: #0f172a;
+    color: #0f2410;
     letter-spacing: 0.5px;
 }
 
 .parul-text {
     font-size: 14px;
     font-weight: 900;
-    color:#0f172a;
+    color:#0f2410;
 }
 
 /* Slider Arrows */
@@ -629,7 +609,7 @@ html {
     background-color: transparent;
     border: none;
     font-size: 20px;
-    color: #1e1b4b;
+    color: #14532d;
     cursor: pointer;
     transition: transform 0.2s;
 }
@@ -641,7 +621,7 @@ html {
 /* Vertical Dotted Divider */
 .vertical-divider {
     width: 1px;
-    background: repeating-linear-gradient(to bottom, #cbd5e1 0, #cbd5e1 6px, transparent 6px, transparent 12px);
+    background: repeating-linear-gradient(to bottom, #a7f3d0 0, #a7f3d0 6px, transparent 6px, transparent 12px);
     align-self: stretch;
     margin: 0 40px;
 }
@@ -654,7 +634,7 @@ html {
 .features-title {
     font-size: 36px;
     font-weight: 900;
-    color: #1e1b4b; /* Dark navy title matching VTechLabs style */
+    color: #14532d; /* Dark navy title matching VTechLabs style */
     line-height: 1.2;
     margin-bottom: 20px;
     letter-spacing: -0.5px;
@@ -685,7 +665,7 @@ html {
 
 .check-icon {
     background-color: #22c55e;
-    color: white;
+    color: #ffffff;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -714,7 +694,7 @@ html {
 /* full-result-section */
 
 .full-result-section{
-    background-color: white;
+    background-color: #F7F5F0;
 }
 
 /* result section */
@@ -723,10 +703,10 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #24145e; /* Deep purple background */
+  background-color: #166534; /* Deep purple background */
   padding: 80px 6%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #ffffff;
+  color:#ffffff;
   position: relative;
   border-radius: 50px;
 }
@@ -741,7 +721,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 42px;
   font-weight: 500;
-  color: #ffe600; /* Yellow accent title */
+  color: #16a34a; /* Yellow accent title */
   line-height: 1.25;
   margin-bottom: 15px;
 }
@@ -761,7 +741,7 @@ html {
 }
 
 .outline-badge {
-  border: 1.5px solid #20c997;
+  border: 1.5px solid #16a34a;
   padding: 6px 16px;
   border-radius: 20px;
   font-weight: 600;
@@ -790,13 +770,13 @@ html {
 
 .quote-icon {
   font-size: 28px;
-  color: #20c997;
+  color: #16a34a;
 }
 
 .quote-header h4 {
   font-size: 16px;
   font-weight: 600;
-  color: #ffe600;
+  color: #16a34a;
   margin: 0 0 5px 0;
 }
 
@@ -808,7 +788,7 @@ html {
 .testimonial-card p {
   font-size: 15px;
   line-height: 1.6;
-  color: #f3f4f6;
+  color: #ecfdf5;
   margin: 0;
 }
 
@@ -822,9 +802,9 @@ html {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #20c997;
+  background-color: #16a34a;
   border: none;
-  color: #ffffff;
+  color:#ffffff;
   font-size: 16px;
   cursor: pointer;
   display: flex;
@@ -857,7 +837,7 @@ html {
   width: 100%;
   max-width: 420px;
   height: 520px;
-  background: #111827;
+  background: #0f2410;
   border-radius: 20px;
   position: relative;
   overflow: hidden;
@@ -883,7 +863,7 @@ html {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: #ffffff;
+  background: #F7F5F0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -938,10 +918,10 @@ html {
 }
 
 .student-label {
-  background: #ffffff;
+  background: #F7F5F0;
   padding: 8px 16px;
   border-radius: 10px;
-  color: #111827;
+  color: #0f2410;
 }
 
 .student-label h6 {
@@ -988,7 +968,7 @@ html {
 /* Section Wrapper */
 .learning-section {
     padding: 80px 6%;
-    background-color: #ffffff;
+    background-color: #F7F5F0;
 }
 
 .learning-container {
@@ -1008,7 +988,7 @@ html {
 .learning-title {
     font-size: 44px;
     font-weight: 900;
-    color: #1e1b4b; /* Deep Navy matching VTechLabs */
+    color: #14532d; /* Deep Navy matching VTechLabs */
     line-height: 1.15;
     letter-spacing: -1px;
 }
@@ -1036,7 +1016,7 @@ html {
 .pill-badge {
     display: inline-block;
     border: 2px solid #22c55e;
-    color: #111827;
+    color: #0f2410;
     padding: 3px 16px;
     border-radius: 30px;
     font-weight: 700;
@@ -1111,7 +1091,7 @@ html {
 .confused-title {
     font-size: 48px;
     font-weight: 900;
-    color: #1e1b4b; /* Deep Navy heading */
+    color: #14532d; /* Deep Navy heading */
     line-height: 1.15;
     margin-bottom: 35px;
     letter-spacing: -1px;
@@ -1132,7 +1112,7 @@ html {
 .confused-form input, 
 .confused-form select {
     flex: 1;
-    background-color: #f3f4f6;
+    background-color: #ecfdf5;
     border: 1px solid #d1d5db;
     border-radius: 8px;
     padding: 14px 18px;
@@ -1144,8 +1124,8 @@ html {
 
 .confused-form input:focus, 
 .confused-form select:focus {
-    border-color: #2dd4bf;
-    background-color: #ffffff;
+    border-color: #16a34a;
+    background-color: #F7F5F0;
 }
 
 .confused-form select {
@@ -1256,7 +1236,7 @@ html {
 .footer-heading {
     font-size: 24px;
     font-weight: 700;
-    color: #facc15; /* Yellow/Gold accent matching screenshot */
+    color: #16a34a; /* Yellow/Gold accent matching screenshot */
     margin-bottom: 25px;
     font-family: serif; /* Gives the classic editorial serif feel */
 }
@@ -1313,7 +1293,7 @@ html {
 }
 
 .social-icons a:hover {
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     color: #161616;
     border-color: #ffffff;
 }
@@ -1332,7 +1312,7 @@ html {
 }
 
 .qr-box {
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     width: 115px;
     height: 115px;
     padding: 6px;
@@ -1358,7 +1338,7 @@ html {
 
 .footer-links li a {
     text-decoration: none;
-    color: #cbd5e1;
+    color: #a7f3d0;
     font-size: 14px;
     transition: color 0.2s;
 }
@@ -1380,18 +1360,18 @@ html {
     align-items: flex-start;
     gap: 12px;
     font-size: 14px;
-    color: #cbd5e1;
+    color: #a7f3d0;
 }
 
 .contact-list li i {
-    color: #facc15;
+    color: #16a34a;
     font-size: 16px;
     margin-top: 3px;
 }
 
 .contact-list li a {
     text-decoration: none;
-    color: #cbd5e1;
+    color: #a7f3d0;
     transition: color 0.2s;
 }
 

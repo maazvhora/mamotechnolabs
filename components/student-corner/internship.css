@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #0b132b;
-    color: #ffffff;
+    background-color: #F7F5F0;
+    color: #0f2410;
     margin: 0; /* Body ke default margin ko remove karne ke liye */
     padding: 85px 0 0 0; /* Navbar ke liye space */
 }
@@ -29,7 +29,6 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
-  background: transparent linear-gradient(248deg, #312393 0%, #1f2740 100%) 0% 0% no-repeat;
   
   /* Koi transition ya animation nahi hai */
 }
@@ -42,14 +41,11 @@ html {
 }
 
 .brand-logo {
-    width: 80px;         /* Adjust the size of your image here */
+    width: 250px;         /* Adjust the size of your image here */
     height: auto;
 }
 
-.brand-text {
-    display: flex;
-    flex-direction: column; /* Stack "Mamo" and "Techno Labs" vertically */
-}
+
 
 .brand-link {
   text-decoration: none;
@@ -58,19 +54,7 @@ html {
   cursor: pointer;
 }
 
-.sub-title {
-    color: #2dd4bf;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1;
-}
 
-.main-title {
-    font-size: 32px;
-    font-weight: 300;
-    color: #ffffff;
-    margin: 0;
-}
 
 .nav-links {
     display: flex;
@@ -79,14 +63,14 @@ html {
 
 .nav-links a {
     text-decoration: none;
-    color: #e2e8f0;
+    color: #a7f3d0;
     font-weight: 600;
     font-size: 14px;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #4ade80;
+    color: #16a34a;
 }
 
 .nav-links i {
@@ -102,8 +86,8 @@ html {
 
 .btn-skill {
     background: transparent;
-    border: 2px solid #facc15;
-    color: #facc15;
+    border: 2px solid #16a34a;
+    color: #16a34a;
     padding: 8px 18px;
     border-radius: 30px;
     text-decoration: none;
@@ -112,8 +96,8 @@ html {
 }
 
 .btn-hire {
-    background: #facc15;
-    color: #000000;
+    background: #16a34a;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 30px;
     text-decoration: none;
@@ -133,7 +117,7 @@ html {
     visibility: hidden;
     transform: translateY(10px); /* Thoda sa niche se slide hote hue aayega */
     position: absolute;
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     min-width: 260px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
@@ -146,7 +130,7 @@ html {
 
 /* Dropdown Links Styling */
 .dropdown-content a {
-    color: #111111 !important;
+    color: #0f2410 !important;
     padding: 12px 22px;
     text-decoration: none;
     display: block;
@@ -158,8 +142,8 @@ html {
 
 /* Hover Effect on Dropdown Items */
 .dropdown-content a:hover {
-    background-color: #f3f4f8;
-    color: #3f1dcb !important;
+    background-color: #ecfdf5;
+    color: #166534 !important;
 }
 
 /* Show Dropdown Smoothly on Mouse Hover */
@@ -175,11 +159,9 @@ html {
     justify-content: center;
     align-items: center;
     padding: 60px 5% 0 5%;
-    background: transparent linear-gradient(248deg, #312393 0%, #1f2740 100%) 0% 0% no-repeat;
     position: relative;
     overflow: hidden;
     min-height: 550px;
-    background-image: url('https://www.vtechlabs.com/wp-content/themes/VTechLabs/assets/images/home-banner-bg.png');
 }
 
 /* Banner Content ("About Us") */
@@ -196,18 +178,17 @@ html {
   font-weight: 900;
   letter-spacing: 1px;
   margin: 0;
-  color: #ffffff;
 }
 
 .highlight-text {
-  color: #ffe600; /* Yellow accent for "Us" */
+  color: #16a34a; /* Yellow accent for "Us" */
   font-style: italic;
 }
 
 /* internship-section */
 
 .internship-section {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   padding: 80px 6%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -230,7 +211,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 38px;
   font-weight: 500;
-  color: #3f1dcb; /* Deep purple heading */
+  color: #166534; /* Deep purple heading */
   line-height: 1.3;
   margin-bottom: 25px;
 }
@@ -245,7 +226,7 @@ html {
 .internship-content h3 {
   font-size: 18px;
   font-weight: 600;
-  color: #111111;
+  color: #0f2410;
   margin: 25px 0 15px 0;
 }
 
@@ -292,14 +273,14 @@ html {
 /* student placed in compnies */
 .hiring-partners-section {
     padding: 70px 5%;
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     text-align: center;
 }
 
 .partners-heading {
     font-size: 38px;
     font-weight: 800;
-    color: #2dd4bf; /* Mint green color matching the design */
+    color: #16a34a; /* Mint green color matching the design */
     margin-bottom: 50px;
     letter-spacing: -0.5px;
 }
@@ -315,7 +296,7 @@ html {
 
 /* Arrow Buttons */
 .arrow-btn {
-    background-color: #f0fdf4;
+    background-color: #dcfce7;
     border: none;
     width: 45px;
     height: 45px;
@@ -324,7 +305,7 @@ html {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #1e1b4b;
+    color: #14532d;
     box-shadow: 0 4px 6px rgba(0,0,0,0.04);
     z-index: 10;
     transition: background 0.2s;
@@ -407,8 +388,8 @@ html {
 .rishabh-icon {
     width: 32px;
     height: 32px;
-    background-color: #0f172a;
-    color: white;
+    background-color: #0f2410;
+    color: #ffffff;
     font-weight: 900;
     border-radius: 6px;
     display: flex;
@@ -425,7 +406,7 @@ html {
 .rishabh-main {
     font-size: 14px;
     font-weight: 900;
-    color: #0f172a;
+    color: #0f2410;
     letter-spacing: 0.5px;
 }
 .rishabh-sub {
@@ -459,7 +440,7 @@ html {
 .mysphere-sub {
     font-size: 8px;
     font-weight: 800;
-    color: #0f172a;
+    color: #0f2410;
     letter-spacing: 1px;
     margin-top: 2px;
 }
@@ -473,7 +454,7 @@ html {
 .webmyne-main {
     font-size: 20px;
     font-weight: 800;
-    color: #0f172a;
+    color: #0f2410;
     letter-spacing: -0.5px;
 }
 .red-w {
@@ -496,7 +477,7 @@ html {
     width: 24px;
     height: 24px;
     background-color: #22c55e;
-    color: white;
+    color: #ffffff;
     border-radius: 50%;
     font-weight: bold;
     display: flex;
@@ -521,11 +502,11 @@ html {
 /* importance-section */
 
 .importance-section {
-  background: linear-gradient(135deg, #2b1b66 0%, #170d3f 100%); /* Deep purple gradient background matching screenshot */
+  background: linear-gradient(135deg, #14532d 0%, #170d3f 100%); /* Deep purple gradient background matching screenshot */
   padding: 90px 8%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  color: #ffffff;
+  color:#ffffff;
 }
 
 .importance-container {
@@ -538,7 +519,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 42px;
   font-weight: 500;
-  color: #facc15; /* Golden-yellow accent color */
+  color: #16a34a; /* Golden-yellow accent color */
   margin-bottom: 30px;
   line-height: 1.3;
 }
@@ -547,7 +528,7 @@ html {
 .importance-section p {
   font-size: 16px;
   line-height: 1.8;
-  color: #f3f4f6; /* Soft off-white text for readability */
+  color: #ecfdf5; /* Soft off-white text for readability */
   margin-bottom: 25px;
 }
 
@@ -556,7 +537,7 @@ html {
 }
 
 .placements-section {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   padding: 80px 5%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
@@ -571,7 +552,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 42px;
   font-weight: 500;
-  color: #20c997; /* Teal/Green heading matching screenshot */
+  color: #16a34a; /* Teal/Green heading matching screenshot */
   margin: 0;
 }
 
@@ -631,14 +612,14 @@ html {
 .student-role {
   font-size: 18px;
   font-weight: 700;
-  color: #111111;
+  color: #0f2410;
   margin: 0 0 25px 0;
 }
 
 /* Company Logo Image Wrapper */
 .company-logo-wrapper {
   margin-top: auto;
-  border-top: 1px dashed #cbd5e1; /* Subtle dashed separator line matching screenshot */
+  border-top: 1px dashed #a7f3d0; /* Subtle dashed separator line matching screenshot */
   width: 100%;
   padding-top: 15px;
   display: flex;
@@ -655,7 +636,7 @@ html {
 
 /* Benefits Section Styling */
 .benefits-section {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   padding: 60px 8% 90px 8%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -669,7 +650,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 38px;
   font-weight: 500;
-  color: #3f1dcb; /* Deep purple heading */
+  color: #166534; /* Deep purple heading */
   margin-bottom: 35px;
   
 }
@@ -693,7 +674,7 @@ html {
 }
 
 .benefits-list li i {
-  color: #3f1dcb; /* Deep purple check icons matching screenshot */
+  color: #166534; /* Deep purple check icons matching screenshot */
   font-size: 15px;
   margin-top: 3px;
 }
@@ -706,7 +687,7 @@ html {
 /* requirements-section */
 
 .requirements-section {
-  background-color: #f8f9fc; /* Soft neutral background matching screenshot */
+  background-color: #FDFCF8; /* Soft neutral background matching screenshot */
   padding: 80px 8%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -721,7 +702,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 38px;
   font-weight: 500;
-  color: #3f1dcb; /* Deep purple heading */
+  color: #166534; /* Deep purple heading */
   line-height: 1.3;
   margin-bottom: 25px;
 }
@@ -730,7 +711,7 @@ html {
 .requirements-section h3 {
   font-size: 18px;
   font-weight: 700;
-  color: #111111;
+  color: #0f2410;
   margin-bottom: 15px;
 }
 
@@ -763,7 +744,7 @@ html {
 
 /* Checkmark Icon Styling */
 .requirements-list li i {
-  color: #3f1dcb; /* Deep purple check icons */
+  color: #166534; /* Deep purple check icons */
   font-size: 15px;
   margin-top: 4px;
   flex-shrink: 0;
@@ -788,7 +769,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 42px;
   font-weight: 500;
-  color: #3f1dcb; /* Deep purple heading */
+  color: #166534; /* Deep purple heading */
   margin-bottom: 10px;
 }
 
@@ -819,11 +800,11 @@ html {
 .form-group input {
   width: 100%;
   padding: 16px 20px;
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
+  background-color: #F7F5F0;
+  border: 1px solid #bbf7d0;
   border-radius: 8px;
   font-size: 15px;
-  color: #111111;
+  color: #0f2410;
   outline: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
   transition: border-color 0.2s;
@@ -834,7 +815,7 @@ html {
 }
 
 .form-group input:focus {
-  border-color: #3f1dcb;
+  border-color: #166534;
 }
 
 /* reCAPTCHA Row & Box */
@@ -900,8 +881,8 @@ html {
 }
 
 .submit-btn {
-  background-color: #3f1dcb; /* Deep purple button */
-  color: #ffffff;
+  background-color: #166534; /* Deep purple button */
+  color:#ffffff;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -914,14 +895,14 @@ html {
 }
 
 .submit-btn:hover {
-  background-color: yellow;
+  background-color: #dcfce7;
   color: #000000;
 }
 
 /* profile-building-section */
 
 .profile-building-section {
-  background-color: #f8f9fc;
+  background-color: #FDFCF8;
   padding: 80px 5%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
@@ -935,7 +916,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 42px;
   font-weight: 500;
-  color: #3f1dcb;
+  color: #166534;
   margin: 0;
 }
 
@@ -990,13 +971,13 @@ html {
 /* Front Side Styling */
 .flip-card-front {
   background-color: #f1f3f9;
-  color: #2b1b66;
+  color: #14532d;
 }
 
 .icon-circle {
   width: 75px;
   height: 75px;
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -1007,7 +988,7 @@ html {
 
 .icon-circle i {
   font-size: 30px;
-  color: #20c997;
+  color: #16a34a;
 }
 
 .flip-card-front h3 {
@@ -1020,8 +1001,8 @@ html {
 
 /* Back Side Styling (Turns Green when flipped) */
 .flip-card-back {
-  background-color: #20c997;
-  color: #ffffff;
+  background-color: #16a34a;
+  color:#ffffff;
   transform: rotateY(180deg); /* Pre-rotates the back side */
   text-align: left;
   box-shadow: 0 10px 25px rgba(32, 201, 151, 0.3);
@@ -1036,7 +1017,7 @@ html {
 /* Connecting Arrow */
 .step-arrow {
   font-size: 20px;
-  color: #3f1dcb;
+  color: #166534;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1046,7 +1027,7 @@ html {
 /* performance-section */
 
 .performance-section {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   padding: 80px 8%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
@@ -1061,7 +1042,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 42px;
   font-weight: 500;
-  color: #3f1dcb; /* Deep purple heading */
+  color: #166534; /* Deep purple heading */
   margin: 0;
 }
 
@@ -1096,7 +1077,7 @@ html {
 }
 
 .stat-card.grey-tint {
-  background-color: #f3f4f8; /* Soft pale grey-purple tint */
+  background-color: #ecfdf5; /* Soft pale grey-purple tint */
 }
 
 /* Stat Numbers */
@@ -1104,7 +1085,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 52px;
   font-weight: 500;
-  color: #2b1b66; /* Deep purple numbers */
+  color: #14532d; /* Deep purple numbers */
   line-height: 1;
   min-width: 150px;
   text-align: left;
@@ -1115,14 +1096,14 @@ html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   font-weight: 600;
-  color: #2b1b66; /* Deep purple text */
+  color: #14532d; /* Deep purple text */
   text-align: left;
 }
 
 /* FAQ Section Container */
 .faq-section {
     padding: 80px 5%;
-    background-color: #111432; /* Deep blue background matching VTechLabs */
+    background-color: #d1fae5;
 }
 
 .faq-container {
@@ -1146,17 +1127,17 @@ html {
 }
 
 .faq-item {
-    background-color: #191e45;
+    background-color: #F7F5F0;
     border-radius: 10px;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid #d1fae5;
 }
 
 /* Question Header Button */
 .faq-question {
     width: 100%;
-    background-color: #1e2456;
-    color: #ffffff;
+    background-color: #F7F5F0;
+    color: #0f2410;
     border: none;
     padding: 20px 25px;
     font-size: 18px;
@@ -1169,10 +1150,10 @@ html {
     transition: background 0.2s;
 }
 
-/* Active Open Question styling (Mint green banner matching screenshot) */
+/* Active Open Question styling */
 .faq-item.active .faq-question {
-    background-color: #2dd4bf;
-    color: #0f172a;
+    background-color: #16a34a;
+    color: #ffffff;
 }
 
 .arrow-icon {
@@ -1185,7 +1166,7 @@ html {
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
     padding: 0 25px;
-    background-color: #151a3f;
+    background-color: #F7F5F0;
 }
 
 .faq-item.active .faq-answer {
@@ -1195,7 +1176,7 @@ html {
 
 .faq-answer p {
     font-size: 15px;
-    color: #cbd5e1;
+    color: #374151;
     line-height: 1.5;
 }
 
@@ -1218,7 +1199,7 @@ html {
 .footer-heading {
     font-size: 24px;
     font-weight: 700;
-    color: #facc15; /* Yellow/Gold accent matching screenshot */
+    color: #16a34a; /* Yellow/Gold accent matching screenshot */
     margin-bottom: 25px;
     font-family: serif; /* Gives the classic editorial serif feel */
 }
@@ -1275,7 +1256,7 @@ html {
 }
 
 .social-icons a:hover {
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     color: #161616;
     border-color: #ffffff;
 }
@@ -1294,7 +1275,7 @@ html {
 }
 
 .qr-box {
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     width: 115px;
     height: 115px;
     padding: 6px;
@@ -1320,7 +1301,7 @@ html {
 
 .footer-links li a {
     text-decoration: none;
-    color: #cbd5e1;
+    color: #a7f3d0;
     font-size: 14px;
     transition: color 0.2s;
 }
@@ -1342,18 +1323,18 @@ html {
     align-items: flex-start;
     gap: 12px;
     font-size: 14px;
-    color: #cbd5e1;
+    color: #a7f3d0;
 }
 
 .contact-list li i {
-    color: #facc15;
+    color: #16a34a;
     font-size: 16px;
     margin-top: 3px;
 }
 
 .contact-list li a {
     text-decoration: none;
-    color: #cbd5e1;
+    color: #a7f3d0;
     transition: color 0.2s;
 }
 

@@ -1,3 +1,13 @@
+// ── Navbar scroll shrink ──────────────────────────────────────────
+window.addEventListener('scroll', () => {
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 40) {
+    navbar.classList.add('navbar--scrolled');
+  } else {
+    navbar.classList.remove('navbar--scrolled');
+  }
+});
+
 document.addEventListener("DOMContentLoaded", () => {
             const counters = document.querySelectorAll('.stat-num');
             const speed = 50; // The lower the faster

@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #0b132b;
-    color: #ffffff;
+    background-color: #F7F5F0;
+    color: #0f2410;
     margin: 0; /* Body ke default margin ko remove karne ke liye */
     padding: 85px 0 0 0; /* Navbar ke liye space */
 }
@@ -29,7 +29,6 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
-  background: transparent linear-gradient(248deg, #312393 0%, #1f2740 100%) 0% 0% no-repeat;
   
   /* Koi transition ya animation nahi hai */
 }
@@ -42,14 +41,11 @@ html {
 }
 
 .brand-logo {
-    width: 80px;         /* Adjust the size of your image here */
+    width: 250px;         /* Adjust the size of your image here */
     height: auto;
 }
 
-.brand-text {
-    display: flex;
-    flex-direction: column; /* Stack "Mamo" and "Techno Labs" vertically */
-}
+
 
 .brand-link {
   text-decoration: none;
@@ -58,19 +54,7 @@ html {
   cursor: pointer;
 }
 
-.sub-title {
-    color: #2dd4bf;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1;
-}
 
-.main-title {
-    font-size: 32px;
-    font-weight: 300;
-    color: #ffffff;
-    margin: 0;
-}
 
 .nav-links {
     display: flex;
@@ -79,14 +63,14 @@ html {
 
 .nav-links a {
     text-decoration: none;
-    color: #e2e8f0;
+    color: #a7f3d0;
     font-weight: 600;
     font-size: 14px;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #4ade80;
+    color: #16a34a;
 }
 
 .nav-links i {
@@ -102,8 +86,8 @@ html {
 
 .btn-skill {
     background: transparent;
-    border: 2px solid #facc15;
-    color: #facc15;
+    border: 2px solid #16a34a;
+    color: #16a34a;
     padding: 8px 18px;
     border-radius: 30px;
     text-decoration: none;
@@ -112,8 +96,8 @@ html {
 }
 
 .btn-hire {
-    background: #facc15;
-    color: #000000;
+    background: #16a34a;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 30px;
     text-decoration: none;
@@ -133,7 +117,7 @@ html {
     visibility: hidden;
     transform: translateY(10px); /* Thoda sa niche se slide hote hue aayega */
     position: absolute;
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     min-width: 260px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
@@ -146,7 +130,7 @@ html {
 
 /* Dropdown Links Styling */
 .dropdown-content a {
-    color: #111111 !important;
+    color: #0f2410 !important;
     padding: 12px 22px;
     text-decoration: none;
     display: block;
@@ -158,8 +142,8 @@ html {
 
 /* Hover Effect on Dropdown Items */
 .dropdown-content a:hover {
-    background-color: #f3f4f8;
-    color: #3f1dcb !important;
+    background-color: #ecfdf5;
+    color: #166534 !important;
 }
 
 /* Show Dropdown Smoothly on Mouse Hover */
@@ -176,11 +160,9 @@ html {
     justify-content: center;
     align-items: center;
     padding: 60px 5% 0 5%;
-    background: transparent linear-gradient(248deg, #312393 0%, #1f2740 100%) 0% 0% no-repeat;
     position: relative;
     overflow: hidden;
     min-height: 550px;
-    background-image: url('https://www.vtechlabs.com/wp-content/themes/VTechLabs/assets/images/home-banner-bg.png');
     background-size: cover;
     background-position: center;
 }
@@ -202,14 +184,13 @@ html {
   font-weight: 300;
   letter-spacing: 1px;
   margin: 0;
-  color: #ffffff;
   display: flex;
   flex-direction: column; /* Forces the two spans to stack on separate lines */
   gap: 10px;              /* Adds breathing room between the lines */
 }
 
 .highlight-text {
-  color: #ffe600; /* Yellow accent */
+  color: #16a34a; /* Yellow accent */
   font-style: italic;
   font-weight: 400;
 }
@@ -233,7 +214,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 42px;
   font-weight: 500;
-  color: #2b1b66;
+  color: #14532d;
   margin-bottom: 15px;
 }
 
@@ -264,8 +245,8 @@ html {
 
 .courses-search-box {
   position: relative;
-  background-color: #ffffff;
-  border: 1px solid #cbd5e1;
+  background-color: #F7F5F0;
+  border: 1px solid #a7f3d0;
   border-radius: 8px;
   padding: 10px 15px;
 }
@@ -287,8 +268,8 @@ html {
 }
 
 .filter-group {
-  background-color: #ffffff;
-  border: 1px solid #cbd5e1;
+  background-color: #F7F5F0;
+  border: 1px solid #a7f3d0;
   border-radius: 8px;
   padding: 18px;
 }
@@ -296,7 +277,7 @@ html {
 .filter-group h3 {
   font-size: 16px;
   font-weight: 700;
-  color: #2b1b66;
+  color: #14532d;
   margin: 0 0 12px 0;
 }
 
@@ -311,8 +292,8 @@ html {
 }
 
 .courses-reset-btn {
-  background-color: #2b1b66;
-  color: #ffffff;
+  background-color: #14532d;
+  color:#ffffff;
   border: none;
   padding: 12px;
   font-size: 14px;
@@ -323,7 +304,8 @@ html {
 }
 
 .courses-reset-btn:hover {
-  background-color: #3f1dcb;
+  background-color: #166534;
+  color: #ffffff;
 }
 
 /* Sidebar Demo Promo Box */
@@ -349,7 +331,7 @@ html {
 
 .demo-btn {
   display: inline-block;
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   color: #065f46;
   padding: 8px 16px;
   border-radius: 20px;
@@ -379,11 +361,11 @@ html {
 }
 
 .course-card {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e2e8f0;
+  border: 1px solid #bbf7d0;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
@@ -405,14 +387,14 @@ html {
 }
 
 /* Card Mock Background Colors/Gradients */
-.bg-python { background: linear-gradient(135deg, #1e293b 0%, #3b82f6 100%); }
-.bg-ai-tools { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); }
+.bg-python { background: linear-gradient(135deg, #1a3320 0%, #3b82f6 100%); }
+.bg-ai-tools { background: linear-gradient(135deg, #0f2410 0%, #14532d 100%); }
 .bg-aws { background: linear-gradient(135deg, #d97706 0%, #b45309 100%); }
 .bg-content { background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); }
-.bg-cyber { background: linear-gradient(135deg, #111827 0%, #1f2937 100%); }
+.bg-cyber { background: linear-gradient(135deg, #0f2410 0%, #1f2937 100%); }
 .bg-business { background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%); }
 .bg-angular { background: linear-gradient(135deg, #be123c 0%, #9f1239 100%); }
-.bg-java { background: linear-gradient(135deg, #0f172a 0%, #334155 100%); }
+.bg-java { background: linear-gradient(135deg, #0f2410 0%, #334155 100%); }
 .bg-genai { background: linear-gradient(135deg, #831843 0%, #500724 100%); }
 
 .badge-tag {
@@ -463,7 +445,7 @@ html {
 }
 
 .course-card-footer i {
-  color: #2b1b66;
+  color: #14532d;
   font-size: 16px;
 }
 
@@ -478,8 +460,8 @@ html {
 .page-btn {
   width: 32px;
   height: 32px;
-  background-color: #ffffff;
-  border: 1px solid #cbd5e1;
+  background-color: #F7F5F0;
+  border: 1px solid #a7f3d0;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 600;
@@ -488,9 +470,9 @@ html {
 }
 
 .page-btn.active {
-  background-color: #2b1b66;
-  color: #ffffff;
-  border-color: #2b1b66;
+  background-color: #14532d;
+  color:#ffffff;
+  border-color: #ffffff;
 }
 
 .page-dots {
@@ -501,7 +483,7 @@ html {
   background: none;
   border: none;
   font-size: 14px;
-  color: #2b1b66;
+  color: #14532d;
   font-weight: 700;
   cursor: pointer;
   margin-left: 10px;
@@ -530,14 +512,15 @@ html {
 /* full full-testimonials Main Section Layout */
 
 .full-testimonials{
-    background-color: white;
+    background-color: #F7F5F0;
 }
 
 /* full-testimonials Main Section Layout */
 .testimonials-section {
     padding: 80px 5%;
-    background-color: #111432; /* Deep Blue Background matching VTechLabs style */
+    background-color: #052e16; /* Deep Blue Background matching VTechLabs style */
     border-radius: 50px;
+  color: #ffffff;
 }
 
 .testimonials-container {
@@ -563,12 +546,12 @@ html {
 }
 
 .highlight-yellow {
-    color: #facc15;
+    color: #16a34a;
 }
 
 .section-subtitle {
     font-size: 16px;
-    color: #cbd5e1;
+    color: #a7f3d0;
     margin-bottom: 20px;
 }
 
@@ -580,7 +563,7 @@ html {
 }
 
 .pill-box {
-    border: 2px solid #38bdf8;
+    border: 2px solid #16a34a;
     color: #ffffff;
     padding: 6px 18px;
     border-radius: 30px;
@@ -589,7 +572,7 @@ html {
 }
 
 .subtitle-text {
-    color: #cbd5e1;
+    color: #a7f3d0;
     font-size: 15px;
 }
 
@@ -608,26 +591,26 @@ html {
     top: 25px;
     right: 30px;
     font-size: 36px;
-    color: #2dd4bf;
+    color: #16a34a;
     opacity: 0.8;
 }
 
 .student-name {
     font-size: 18px;
     font-weight: 700;
-    color: #facc15;
+    color: #16a34a;
     margin-bottom: 10px;
 }
 
 .stars {
-    color: #facc15;
+    color: #16a34a;
     font-size: 14px;
     margin-bottom: 15px;
 }
 
 .review-text {
     font-size: 15px;
-    color: #e2e8f0;
+    color: #a7f3d0;
     line-height: 1.6;
 }
 
@@ -638,7 +621,7 @@ html {
 }
 
 .arrow-btn {
-    background-color: #2dd4bf;
+    background-color: #16a34a;
     border: none;
     width: 42px;
     height: 42px;
@@ -646,7 +629,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #0f172a;
+    color: #ffffff;
     font-size: 14px;
     cursor: pointer;
     transition: transform 0.2s;
@@ -672,7 +655,7 @@ html {
 }
 
 .video-card {
-    background-color: #1e2348;
+    background-color: #d1fae5;
     border-radius: 24px;
     overflow: hidden;
     width: 100%;
@@ -687,7 +670,7 @@ html {
     align-items: center;
     gap: 12px;
     padding: 18px 20px;
-    background-color: #1a1f42;
+    background-color: #d1fae5;
 }
 
 .profile-thumb {
@@ -705,12 +688,12 @@ html {
 .video-meta h4 {
     font-size: 14px;
     font-weight: 700;
-    color: #ffffff;
+    color: #0f2410;
 }
 
 .video-meta span {
     font-size: 12px;
-    color: #94a3b8;
+    color: #000000;
 }
 
 .video-screen {
@@ -731,7 +714,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #ef4444;
-    color: white;
+    color: #ffffff;
     width: 65px;
     height: 65px;
     border-radius: 50%;
@@ -747,7 +730,7 @@ html {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     color: #000000;
     padding: 10px 18px;
     border-radius: 12px;
@@ -794,7 +777,7 @@ html {
 /* Main Section Layout */
 .trust-section {
     padding: 80px 6%;
-    background-color: #ffffff;
+    background-color: #F7F5F0;
 }
 
 .trust-container {
@@ -816,7 +799,7 @@ html {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background-color: #f0fdf4;
+    background-color: #dcfce7;
     padding: 6px 14px;
     border-radius: 30px;
     font-size: 13px;
@@ -827,7 +810,7 @@ html {
 
 .check-circle {
     background-color: #22c55e;
-    color: white;
+    color: #ffffff;
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -840,7 +823,7 @@ html {
 .trust-left h2 {
     font-size: 42px;
     font-weight: 800;
-    color: #1e1b4b;
+    color: #14532d;
     margin-bottom: 20px;
     letter-spacing: -1px;
 }
@@ -855,7 +838,7 @@ html {
 .outline-pill {
     display: inline-block;
     border: 2px solid #22c55e;
-    color: #111827;
+    color: #0f2410;
     padding: 3px 14px;
     border-radius: 20px;
     font-weight: 600;
@@ -915,11 +898,11 @@ html {
 }
 
 .bg-green {
-    background-color: #f0fdf4;
+    background-color: #dcfce7;
 }
 
 .bg-light {
-    background-color: #f8fafc;
+    background-color: #FDFCF8;
 }
 
 .card-header {
@@ -932,13 +915,13 @@ html {
 .stat-num {
     font-size: 36px;
     font-weight: 900;
-    color: #1e1b4b;
+    color: #14532d;
 }
 
 .stat-title {
     font-size: 16px;
     font-weight: 700;
-    color: #1e1b4b;
+    color: #14532d;
 }
 
 .card-text {
@@ -960,14 +943,14 @@ html {
 /* Hiring Partners Section */
 .hiring-partners-section {
     padding: 70px 5%;
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     text-align: center;
 }
 
 .partners-heading {
     font-size: 38px;
     font-weight: 800;
-    color: #2dd4bf; /* Mint green color matching the design */
+    color: #16a34a; /* Mint green color matching the design */
     margin-bottom: 50px;
     letter-spacing: -0.5px;
 }
@@ -983,7 +966,7 @@ html {
 
 /* Arrow Buttons */
 .arrow-btn {
-    background-color: #f0fdf4;
+    background-color: #dcfce7;
     border: none;
     width: 45px;
     height: 45px;
@@ -992,7 +975,7 @@ html {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #1e1b4b;
+    color: #14532d;
     box-shadow: 0 4px 6px rgba(0,0,0,0.04);
     z-index: 10;
     transition: background 0.2s;
@@ -1075,8 +1058,8 @@ html {
 .rishabh-icon {
     width: 32px;
     height: 32px;
-    background-color: #0f172a;
-    color: white;
+    background-color: #0f2410;
+    color: #ffffff;
     font-weight: 900;
     border-radius: 6px;
     display: flex;
@@ -1093,7 +1076,7 @@ html {
 .rishabh-main {
     font-size: 14px;
     font-weight: 900;
-    color: #0f172a;
+    color: #0f2410;
     letter-spacing: 0.5px;
 }
 .rishabh-sub {
@@ -1127,7 +1110,7 @@ html {
 .mysphere-sub {
     font-size: 8px;
     font-weight: 800;
-    color: #0f172a;
+    color: #0f2410;
     letter-spacing: 1px;
     margin-top: 2px;
 }
@@ -1141,7 +1124,7 @@ html {
 .webmyne-main {
     font-size: 20px;
     font-weight: 800;
-    color: #0f172a;
+    color: #0f2410;
     letter-spacing: -0.5px;
 }
 .red-w {
@@ -1164,7 +1147,7 @@ html {
     width: 24px;
     height: 24px;
     background-color: #22c55e;
-    color: white;
+    color: #ffffff;
     border-radius: 50%;
     font-weight: bold;
     display: flex;
@@ -1223,7 +1206,7 @@ html {
 .confused-title {
     font-size: 48px;
     font-weight: 900;
-    color: #1e1b4b; /* Deep Navy heading */
+    color: #14532d; /* Deep Navy heading */
     line-height: 1.15;
     margin-bottom: 35px;
     letter-spacing: -1px;
@@ -1244,7 +1227,7 @@ html {
 .confused-form input, 
 .confused-form select {
     flex: 1;
-    background-color: #f3f4f6;
+    background-color: #ecfdf5;
     border: 1px solid #d1d5db;
     border-radius: 8px;
     padding: 14px 18px;
@@ -1256,8 +1239,8 @@ html {
 
 .confused-form input:focus, 
 .confused-form select:focus {
-    border-color: #2dd4bf;
-    background-color: #ffffff;
+    border-color: #16a34a;
+    background-color: #F7F5F0;
 }
 
 .confused-form select {
@@ -1332,7 +1315,7 @@ html {
 }
 
 .btn-book:hover {
-    background-color: yellow;
+    background-color: #dcfce7;
     transform: translateY(-2px);
     color: #000000;
 }
@@ -1371,7 +1354,7 @@ html {
 .footer-heading {
     font-size: 24px;
     font-weight: 700;
-    color: #facc15; /* Yellow/Gold accent matching screenshot */
+    color: #16a34a; /* Yellow/Gold accent matching screenshot */
     margin-bottom: 25px;
     font-family: serif; /* Gives the classic editorial serif feel */
 }
@@ -1428,7 +1411,7 @@ html {
 }
 
 .social-icons a:hover {
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     color: #161616;
     border-color: #ffffff;
 }
@@ -1447,7 +1430,7 @@ html {
 }
 
 .qr-box {
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     width: 115px;
     height: 115px;
     padding: 6px;
@@ -1473,7 +1456,7 @@ html {
 
 .footer-links li a {
     text-decoration: none;
-    color: #cbd5e1;
+    color: #a7f3d0;
     font-size: 14px;
     transition: color 0.2s;
 }
@@ -1495,18 +1478,18 @@ html {
     align-items: flex-start;
     gap: 12px;
     font-size: 14px;
-    color: #cbd5e1;
+    color: #a7f3d0;
 }
 
 .contact-list li i {
-    color: #facc15;
+    color: #16a34a;
     font-size: 16px;
     margin-top: 3px;
 }
 
 .contact-list li a {
     text-decoration: none;
-    color: #cbd5e1;
+    color: #a7f3d0;
     transition: color 0.2s;
 }
 

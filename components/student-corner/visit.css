@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #0b132b;
-    color: #ffffff;
+    background-color: #F7F5F0;
+    color: #0f2410;
     margin: 0; /* Body ke default margin ko remove karne ke liye */
     padding: 85px 0 0 0; /* Navbar ke liye space  */
 }
@@ -29,7 +29,6 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
-  background: transparent linear-gradient(248deg, #312393 0%, #1f2740 100%) 0% 0% no-repeat;
   
   /* Koi transition ya animation nahi hai */
 }
@@ -42,14 +41,11 @@ html {
 }
 
 .brand-logo {
-    width: 80px;         /* Adjust the size of your image here */
+    width: 250px;         /* Adjust the size of your image here */
     height: auto;
 }
 
-.brand-text {
-    display: flex;
-    flex-direction: column; /* Stack "Mamo" and "Techno Labs" vertically */
-}
+
 
 .brand-link {
   text-decoration: none;
@@ -58,19 +54,7 @@ html {
   cursor: pointer;
 }
 
-.sub-title {
-    color: #2dd4bf;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1;
-}
 
-.main-title {
-    font-size: 32px;
-    font-weight: 300;
-    color: #ffffff;
-    margin: 0;
-}
 
 .nav-links {
     display: flex;
@@ -79,14 +63,14 @@ html {
 
 .nav-links a {
     text-decoration: none;
-    color: #e2e8f0;
+    color: #a7f3d0;
     font-weight: 600;
     font-size: 14px;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #4ade80;
+    color: #16a34a;
 }
 
 .nav-links i {
@@ -102,8 +86,8 @@ html {
 
 .btn-skill {
     background: transparent;
-    border: 2px solid #facc15;
-    color: #facc15;
+    border: 2px solid #16a34a;
+    color: #16a34a;
     padding: 8px 18px;
     border-radius: 30px;
     text-decoration: none;
@@ -112,8 +96,8 @@ html {
 }
 
 .btn-hire {
-    background: #facc15;
-    color: #000000;
+    background: #16a34a;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 30px;
     text-decoration: none;
@@ -133,7 +117,7 @@ html {
     visibility: hidden;
     transform: translateY(10px); /* Thoda sa niche se slide hote hue aayega */
     position: absolute;
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     min-width: 260px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
@@ -146,7 +130,7 @@ html {
 
 /* Dropdown Links Styling */
 .dropdown-content a {
-    color: #111111 !important;
+    color: #0f2410 !important;
     padding: 12px 22px;
     text-decoration: none;
     display: block;
@@ -158,8 +142,8 @@ html {
 
 /* Hover Effect on Dropdown Items */
 .dropdown-content a:hover {
-    background-color: #f3f4f8;
-    color: #3f1dcb !important;
+    background-color: #ecfdf5;
+    color: #166534 !important;
 }
 
 /* Show Dropdown Smoothly on Mouse Hover */
@@ -175,11 +159,9 @@ html {
     justify-content: center;
     align-items: center;
     padding: 60px 5% 0 5%;
-    background: transparent linear-gradient(248deg, #312393 0%, #1f2740 100%) 0% 0% no-repeat;
     position: relative;
     overflow: hidden;
     min-height: 550px;
-    background-image: url('https://www.vtechlabs.com/wp-content/themes/VTechLabs/assets/images/home-banner-bg.png');
 }
 
 /* Banner Content ("About Us") */
@@ -196,11 +178,10 @@ html {
   font-weight: 900;
   letter-spacing: 1px;
   margin: 0;
-  color: #ffffff;
 }
 
 .highlight-text {
-  color: #ffe600; /* Yellow accent for "Us" */
+  color: #16a34a; /* Yellow accent for "Us" */
   font-style: italic;
 }
 
@@ -208,7 +189,7 @@ html {
 /* industrial-visits-section */
 
 .industrial-visits-section {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   padding: 90px 6%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -231,7 +212,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 42px;
   font-weight: 500;
-  color: #3f1dcb; /* Deep purple heading */
+  color: #166534; /* Deep purple heading */
   line-height: 1.3;
   margin-bottom: 25px;
 }
@@ -250,7 +231,7 @@ html {
 .visit-point h4 {
   font-size: 18px;
   font-weight: 700;
-  color: #111111;
+  color: #0f2410;
   margin: 0 0 8px 0;
   display: flex;
   align-items: center;
@@ -293,13 +274,13 @@ html {
 /* corporate-banner-section */
 
 .corporate-banner-section {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   padding: 40px 6% 80px 6%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .corporate-banner-box {
-  background: linear-gradient(135deg, #2b1b66 0%, #170d3f 100%); /* Deep purple gradient matching screenshot */
+  background: linear-gradient(135deg, #14532d 0%, #170d3f 100%); /* Deep purple gradient matching screenshot */
   border-radius: 24px;
   padding: 50px 60px;
   display: flex;
@@ -309,6 +290,7 @@ html {
   max-width: 1300px;
   margin: 0 auto;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
 }
 
 /* Left Content Column */
@@ -320,7 +302,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 40px;
   font-weight: 500;
-  color: #facc15; /* Golden-yellow accent heading */
+  color: #16a34a; /* Golden-yellow accent heading */
   line-height: 1.3;
   margin-bottom: 35px;
 }
@@ -333,8 +315,8 @@ html {
 }
 
 .btn-contact {
-  background-color: #20c997; /* Vibrant teal/green button */
-  color: #ffffff;
+  background-color: #16a34a; /* Vibrant teal/green button */
+  color:#ffffff;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -346,7 +328,7 @@ html {
 }
 
 .btn-contact:hover {
-  background-color: yellow;
+  background-color: #dcfce7;
   color: #000000;
 }
 
@@ -358,13 +340,13 @@ html {
   letter-spacing: 0.5px;
   padding: 15px 32px;
   border-radius: 30px;
-  border: 2px solid #20c997; /* Teal outline button */
+  border: 2px solid #16a34a; /* Teal outline button */
   text-decoration: none;
   transition: transform 0.2s, background-color 0.2s;
 }
 
 .btn-call:hover {
-  background-color: yellow;
+  background-color: #dcfce7;
   color: #000000;
 }
 
@@ -402,7 +384,7 @@ html {
 
 
 .gallery-section {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   padding: 80px 6%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
@@ -417,7 +399,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 42px;
   font-weight: 500;
-  color: #3f1dcb;
+  color: #166534;
   margin-bottom: 35px;
 }
 
@@ -430,7 +412,7 @@ html {
 }
 
 .pill {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   color: #333333;
   border: 1.5px solid #d1d5db;
   padding: 10px 22px;
@@ -442,9 +424,9 @@ html {
 }
 
 .pill:hover, .pill.active {
-  background-color: #20c997;
-  color: #ffffff;
-  border-color: #20c997;
+  background-color: #16a34a;
+  color:#ffffff;
+  border-color: #ffffff;
   box-shadow: 0 4px 12px rgba(32, 201, 151, 0.25);
 }
 
@@ -546,7 +528,7 @@ html {
 }
 
 .lightbox-close:hover {
-  color: #20c997;
+  color: #16a34a;
 }
 
 @keyframes zoomIn {
@@ -570,11 +552,12 @@ html {
 /* university-slider-section  */
 
 .university-slider-section {
-  background: linear-gradient(135deg, #2b1b66 0%, #170d3f 100%); /* Deep purple gradient matching screenshot */
+  background: linear-gradient(135deg, #14532d 0%, #170d3f 100%); /* Deep purple gradient matching screenshot */
   padding: 90px 6%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   overflow: hidden;
+  color: #ffffff;
 }
 
 .university-container {
@@ -604,7 +587,7 @@ html {
 }
 
 .uni-card {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   border-radius: 16px;
   min-width: 270px;
   height: 160px;
@@ -682,7 +665,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 42px;
   font-weight: 500;
-  color: #3f1dcb;
+  color: #166534;
   margin-bottom: 50px;
 }
 
@@ -700,7 +683,7 @@ html {
 
 /* Exactly Two Cards per View */
 .testimonial-card {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   border-radius: 16px;
   padding: 40px;
   min-width: calc(50% - 15px);
@@ -723,20 +706,20 @@ html {
 .reviewer-info h4 {
   font-size: 16px;
   font-weight: 700;
-  color: #111111;
+  color: #0f2410;
   margin: 0 0 4px 0;
 }
 
 .institution {
   font-size: 13px;
-  color: #3f1dcb;
+  color: #166534;
   font-weight: 600;
   display: block;
   margin-bottom: 12px;
 }
 
 .star-rating {
-  color: #facc15;
+  color: #16a34a;
   font-size: 14px;
   display: flex;
   gap: 4px;
@@ -778,7 +761,7 @@ html {
 
 /* map-inquiry-section */
 .map-inquiry-section {
-  background-color: #ffffff;
+  background-color: #F7F5F0;
   padding: 80px 6%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -793,7 +776,7 @@ html {
   font-family: 'Georgia', serif;
   font-size: 42px;
   font-weight: 500;
-  color: #3f1dcb; /* Deep purple heading */
+  color: #166534; /* Deep purple heading */
   margin: 0;
 }
 
@@ -811,7 +794,7 @@ html {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e2e8f0;
+  border: 1px solid #bbf7d0;
 }
 
 /* Form Container Styling */
@@ -842,11 +825,11 @@ html {
 .detailed-inquiry-form textarea {
   width: 100%;
   padding: 14px 18px;
-  background-color: #f8f9fc;
-  border: 1px solid #e2e8f0;
+  background-color: #FDFCF8;
+  border: 1px solid #bbf7d0;
   border-radius: 8px;
   font-size: 14px;
-  color: #111111;
+  color: #0f2410;
   outline: none;
   transition: border-color 0.2s;
 }
@@ -854,8 +837,8 @@ html {
 .detailed-inquiry-form input:focus,
 .detailed-inquiry-form select:focus,
 .detailed-inquiry-form textarea:focus {
-  border-color: #3f1dcb;
-  background-color: #ffffff;
+  border-color: #166534;
+  background-color: #F7F5F0;
 }
 
 .detailed-inquiry-form select {
@@ -923,8 +906,8 @@ html {
 }
 
 .send-inquiry-btn {
-  background-color: #3f1dcb;
-  color: #ffffff;
+  background-color: #166534;
+  color:#ffffff;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -937,7 +920,7 @@ html {
 }
 
 .send-inquiry-btn:hover {
-  background-color: yellow;
+  background-color: #dcfce7;
   transform: translateY(-2px);
   color: #000000;
 }
@@ -969,7 +952,7 @@ html {
 .footer-heading {
     font-size: 24px;
     font-weight: 700;
-    color: #facc15; /* Yellow/Gold accent matching screenshot */
+    color: #16a34a; /* Yellow/Gold accent matching screenshot */
     margin-bottom: 25px;
     font-family: serif; /* Gives the classic editorial serif feel */
 }
@@ -1026,7 +1009,7 @@ html {
 }
 
 .social-icons a:hover {
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     color: #161616;
     border-color: #ffffff;
 }
@@ -1045,7 +1028,7 @@ html {
 }
 
 .qr-box {
-    background-color: #ffffff;
+    background-color: #F7F5F0;
     width: 115px;
     height: 115px;
     padding: 6px;
@@ -1071,7 +1054,7 @@ html {
 
 .footer-links li a {
     text-decoration: none;
-    color: #cbd5e1;
+    color: #a7f3d0;
     font-size: 14px;
     transition: color 0.2s;
 }
@@ -1093,18 +1076,18 @@ html {
     align-items: flex-start;
     gap: 12px;
     font-size: 14px;
-    color: #cbd5e1;
+    color: #a7f3d0;
 }
 
 .contact-list li i {
-    color: #facc15;
+    color: #16a34a;
     font-size: 16px;
     margin-top: 3px;
 }
 
 .contact-list li a {
     text-decoration: none;
-    color: #cbd5e1;
+    color: #a7f3d0;
     transition: color 0.2s;
 }
 
