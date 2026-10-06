@@ -5,18 +5,19 @@
  */
 (function () {
   // ── 1. Detect how deep current page is from root ──────────────
-  // e.g. /components/about.html        → depth 1 → prefix = "../"
-  //      /components/student-corner/sr.html → depth 2 → prefix = "../../"
-  //      /index.html                   → depth 0 → prefix = "./"
-  const pathParts = window.location.pathname
-    .split('/')
-    .filter(Boolean); // remove empty strings
-
-  // pathParts for /index.html = []  → depth 0
-  // pathParts for /components/about.html = ['components','about.html'] → depth 1
-  // pathParts for /components/student-corner/sr.html = ['components','student-corner','sr.html'] → depth 2
-  const depth = pathParts.length > 1 ? pathParts.length - 1 : 0;
-  const prefix = depth === 0 ? './' : '../'.repeat(depth);
+  let prefix = './';
+  const curScript = document.currentScript;
+  if (curScript && curScript.getAttribute('src')) {
+    const src = curScript.getAttribute('src');
+    const match = src.match(/^(\.{1,2}\/)+/);
+    if (match) {
+      prefix = match[0];
+    }
+  } else {
+    const pathParts = window.location.pathname.split('/').filter(Boolean);
+    const depth = pathParts.length > 1 ? pathParts.length - 1 : 0;
+    prefix = depth === 0 ? './' : '../'.repeat(depth);
+  }
 
   // ── 2. Build path to header partial ───────────────────────────
   const headerPath = prefix + 'partials/header.html';
@@ -50,6 +51,37 @@
           navbar.classList.add('navbar--scrolled');
         } else {
           navbar.classList.remove('navbar--scrolled');
+        }
+      });
+
+      // ── 5. Dropdown Click Toggle (for click / touch interaction) ──
+      const coursesDropdown = header.querySelector('.courses-dropdown');
+      const coursesBtn = header.querySelector('#courses-btn');
+      if (coursesDropdown && coursesBtn) {
+        coursesBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          coursesDropdown.classList.toggle('active');
+        });
+      }
+
+      const studentDropdown = header.querySelector('.dropdown');
+      const studentBtn = studentDropdown ? studentDropdown.querySelector('.nav-link') : null;
+      if (studentDropdown && studentBtn) {
+        studentBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          studentDropdown.classList.toggle('active');
+        });
+      }
+
+      // Close dropdowns when clicking outside
+      document.addEventListener('click', (e) => {
+        if (coursesDropdown && !coursesDropdown.contains(e.target)) {
+          coursesDropdown.classList.remove('active');
+        }
+        if (studentDropdown && !studentDropdown.contains(e.target)) {
+          studentDropdown.classList.remove('active');
         }
       });
     })

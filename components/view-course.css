@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Bedjana",'Segoe UI';
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -179,7 +180,7 @@ html {
 }
 
 .banner-content h1 {
-  font-family: 'Georgia', serif; 
+  font-family: "Roboto", sans-serif;
   font-size: 70px;
   font-weight: 300;
   letter-spacing: 1px;
@@ -201,7 +202,7 @@ html {
 .trending-courses-section {
   background: linear-gradient(135deg, #f5faeb 0%, #d8ebd4 100%);
   padding: 80px 6%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .courses-container {
@@ -211,7 +212,7 @@ html {
 }
 
 .courses-container > h2 {
-  font-family: 'Georgia', serif;
+  font-family: "Roboto", sans-serif;
   font-size: 42px;
   font-weight: 500;
   color: #14532d;
@@ -219,11 +220,11 @@ html {
 }
 
 .section-subtitle {
-  font-size: 14.5px;
   color: #475569;
   max-width: 850px;
   margin: 0 auto 50px auto;
   line-height: 1.6;
+  font-size: 16px;
 }
 
 /* Layout Grid */
@@ -547,12 +548,6 @@ html {
 
 .highlight-yellow {
     color: #16a34a;
-}
-
-.section-subtitle {
-    font-size: 16px;
-    color: #a7f3d0;
-    margin-bottom: 20px;
 }
 
 .story-pill-row {
@@ -1356,7 +1351,7 @@ html {
     font-weight: 700;
     color: #16a34a; /* Yellow/Gold accent matching screenshot */
     margin-bottom: 25px;
-    font-family: serif; /* Gives the classic editorial serif feel */
+    font-family: "Roboto", sans-serif;
 }
 
 /* Column 1: Brand */

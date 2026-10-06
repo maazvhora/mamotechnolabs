@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap');
 /* ============================================
    SHARED FOOTER CSS — Mamo Technolabs
    Used by all pages. Import via HTML link.
    ============================================ */
 
 /* Footer Main Wrapper */
+.site-footer,
+.site-footer * {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Footer Main Wrapper */
 .site-footer {
   background-color: #F7F5F0;
   color: #0f2410;
   padding: 70px 6% 30px 6%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-top: 3px solid #16a34a;
 }
 

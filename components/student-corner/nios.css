@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Bedjana",'Segoe UI';
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -173,7 +174,7 @@ html {
 }
 
 .banner-content h1 {
-  font-family: 'Georgia', serif; /* Gives the classic serif look */
+  font-family: "Roboto", sans-serif;
   font-size: 70px;
   font-weight: 900;
   letter-spacing: 1px;
@@ -191,7 +192,7 @@ html {
 .nios-learning-section {
   background-color: #F7F5F0;
   padding: 90px 6% 60px 6%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .nios-container {
@@ -232,7 +233,7 @@ html {
 }
 
 .nios-content h2 {
-  font-family: 'Georgia', serif;
+  font-family: "Roboto", sans-serif;
   font-size: 38px;
   font-weight: 500;
   color: #166534;
@@ -265,7 +266,7 @@ html {
 }
 
 .what-we-provide-wrapper h3 {
-  font-family: 'Georgia', serif;
+  font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: 500;
   color: #10b981;
@@ -328,7 +329,7 @@ html {
 .start-learning-section {
   background: linear-gradient(135deg, #f5faeb 0%, #d8ebd4 100%);
   padding-bottom: 80px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow: hidden;
   position: relative;
 }
@@ -417,7 +418,7 @@ html {
 }
 
 .learning-header h2 {
-  font-family: 'Georgia', serif;
+  font-family: "Roboto", sans-serif;
   font-size: 42px;
   font-weight: 500;
   color: #166534;
@@ -562,7 +563,7 @@ html {
 .nios-benefits-section {
   background: linear-gradient(135deg, #14532d 0%, #170d3f 100%); /* Deep purple gradient matching screenshot */
   padding: 90px 6%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   color:#ffffff;
   border-radius: 25px;
 }
@@ -574,7 +575,7 @@ html {
 }
 
 .nios-benefits-container h2 {
-  font-family: 'Georgia', serif;
+  font-family: "Roboto", sans-serif;
   font-size: 42px;
   font-weight: 500;
   color: #16a34a; /* Golden-yellow accent heading matching screenshot */
@@ -647,7 +648,7 @@ html {
 .comparison-section {
   background-color: #F7F5F0;
   padding: 90px 6%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
 }
 
@@ -657,7 +658,7 @@ html {
 }
 
 .comparison-container h2 {
-  font-family: 'Georgia', serif;
+  font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: 500;
   color: #166534; /* Deep purple heading */
@@ -775,7 +776,7 @@ html {
 .nios-req-section, .nios-conclusion-section {
   background-color: #F7F5F0;
   padding: 80px 6%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .nios-req-container, .nios-conclusion-container {
@@ -806,7 +807,7 @@ html {
 }
 
 .nios-req-content h2, .nios-conclusion-content h2 {
-  font-family: 'Georgia', serif;
+  font-family: "Roboto", sans-serif;
   font-size: 38px;
   font-weight: 500;
   color: #10b981; /* Vibrant teal/green heading matching screenshot */
@@ -856,7 +857,7 @@ html {
     font-weight: 700;
     color: #16a34a; /* Yellow/Gold accent matching screenshot */
     margin-bottom: 25px;
-    font-family: serif; /* Gives the classic editorial serif feel */
+    font-family: "Roboto", sans-serif;
 }
 
 /* Column 1: Brand */
