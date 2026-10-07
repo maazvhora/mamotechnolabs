@@ -336,26 +336,18 @@ html {
 
 /* Tilted Marquee Wrapper */
 .marquee-wrapper {
-  position: relative;
-  height: 90px;
-  margin-bottom: 50px;
-  transform: rotate(-3deg);
-  width: 105%;
-  margin-left: -10px;
-  overflow: hidden;
+    position: relative;
+    height: 90px;
+    margin-bottom: 40px;
 }
 
 .marquee-strip {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  display: flex;
-  white-space: nowrap;
-  padding: 10px 0;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 1px;
+    position: absolute;
+    width: 110vw;
+    left: -5vw;
+    padding: 12px 0;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /* Ribbon Content Track */
@@ -371,17 +363,20 @@ html {
 
 /* Ribbon Colors */
 .purple-strip {
-  background-color: #14532d;
-  color:#ffffff;
-  z-index: 2;
-  transform: translateY(-5px);
+  background-color: #16a34a; /* Bright Mint Green */
+    transform: rotate(-2deg);
+    top: 28px;
+    z-index: 1;
+  color: #ffffff;
 }
 
 .teal-strip {
-  background-color: #10b981;
+  background-color: #0f2410;
+  transform: rotate(-3deg);
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   color: #ffffff;
-  z-index: 1;
-  transform: translateY(15px);
 }
 
 .marquee-content span {
@@ -523,7 +518,7 @@ html {
 }
 
 .send-inquiry-btn {
-  background-color: #166534;
+  background-color: green;
   color:#ffffff;
   font-size: 15px;
   font-weight: 700;
@@ -537,8 +532,8 @@ html {
 }
 
 .send-inquiry-btn:hover {
-  background-color: #dcfce7;
-  color: #000000;
+  background-color: darkgreen;
+  transform: scale(1.05);
 }
 
 /* Responsive design */
@@ -578,7 +573,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 42px;
   font-weight: 500;
-  color: #16a34a; /* Golden-yellow accent heading matching screenshot */
+  color: yellow; /* Golden-yellow accent heading matching screenshot */
   margin-bottom: 60px;
 }
 
@@ -629,7 +624,7 @@ html {
 }
 
 .benefit-text strong {
-  color: #16a34a; /* Golden highlight for point titles */
+  color: yellow; /* Golden highlight for point titles */
   font-weight: 700;
 }
 

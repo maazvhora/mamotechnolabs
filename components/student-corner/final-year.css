@@ -326,38 +326,37 @@ html {
 
 /* Overlapping Ribbons Styling (Forced Normal Background) */
 .ribbon-container {
-  position: relative !important;
-  height: 60px !important;
-  overflow: visible !important;
-  z-index: 10 !important;
+    position: relative;
+    height: 90px;
+    margin-bottom: 40px;
 }
 
 .ribbon {
-  position: absolute !important;
-  width: 105% !important;
-  left: -10px !important;
-  padding: 12px 0 !important;
-  white-space: nowrap !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
-  background: none !important; /* Kisi bhi purane background ko hatane ke liye */
+    position: absolute;
+    width: 110vw;
+    left: -5vw;
+    padding: 12px 0;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /* Strict Deep Purple Background */
 .purple-ribbon {
-  background-color: #14532d !important; 
-  color:#ffffff;
-  transform: rotate(-3deg) !important;
-  z-index: 12 !important;
-  top: 0 !important;
+    background-color: #16a34a;
+    transform: rotate(-2deg);
+    top: 28px;
+    z-index: 1;
+    color: #ffffff;
 }
 
 /* Strict Teal / Green Background */
 .teal-ribbon {
-  background-color: #10b981 !important; 
-  color: #ffffff !important;
-  transform: rotate(2deg) !important;
-  z-index: 11 !important;
-  top: 14px !important;
+    background-color: #0f2410;
+    transform: rotate(-3deg);
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    color: #ffffff;
 }
 
 .ribbon-track {
@@ -493,7 +492,7 @@ html {
 }
 
 .submit-btn {
-  background-color: #166534;
+  background-color: green;
   color:#ffffff;
   font-size: 15px;
   font-weight: 700;
@@ -507,8 +506,8 @@ html {
 }
 
 .submit-btn:hover {
-  background-color: #dcfce7;
-  color: #000000;
+  background-color: darkgreen;
+  transform: scale(1.05);
 }
 
 /* full-benefits-training-section */
@@ -546,7 +545,7 @@ html {
 
 .benefits-header p {
   font-size: 16px;
-  color: #a7f3d0;
+  color: white;
   margin: 0;
 }
 
@@ -585,8 +584,8 @@ html {
 }
 
 .benefit-icon {
-  background-color: #10b981; /* Green checkmark background badge */
-  color: #ffffff;
+  background-color: yellow;
+  color: black;
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -601,7 +600,7 @@ html {
 .benefit-text h4 {
   font-size: 16px;
   font-weight: 700;
-  color: #16a34a; /* Golden-yellow subheading for titles */
+  color: yellow;
   margin: 0 0 10px 0;
   line-height: 1.4;
 }
@@ -609,7 +608,7 @@ html {
 .benefit-text p {
   font-size: 14px;
   line-height: 1.7;
-  color: #a7f3d0;
+  color: white;
   margin: 0;
 }
 
@@ -640,7 +639,7 @@ html {
 /* Heading Styling */
 .success-tips-section h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 42px;
+  font-size: 45px;
   font-weight: 500;
   color: #166534; /* Deep purple heading */
   margin-bottom: 20px;
@@ -649,7 +648,7 @@ html {
 
 /* Intro Paragraph */
 .section-intro {
-  font-size: 15px;
+  font-size: 19px;
   line-height: 1.7;
   color: #222222;
   font-weight: 600;
@@ -687,7 +686,7 @@ html {
 }
 
 .tip-text {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.7;
   color: #333333;
 }
@@ -805,12 +804,12 @@ html {
 }
 
 .highlight-yellow {
-    color: #16a34a;
+    color: yellow;
 }
 
 .section-subtitle {
     font-size: 16px;
-    color: #a7f3d0;
+    color: white;
     margin-bottom: 20px;
 }
 
@@ -822,7 +821,7 @@ html {
 }
 
 .pill-box {
-    border: 2px solid #16a34a;
+    border: 2px solid yellow;
     color: #ffffff;
     padding: 6px 18px;
     border-radius: 30px;
@@ -831,7 +830,7 @@ html {
 }
 
 .subtitle-text {
-    color: #a7f3d0;
+    color: white;
     font-size: 15px;
 }
 
@@ -1303,7 +1302,7 @@ html {
 
 /* Book Button Styling */
 .btn-book {
-    background-color: #000000;
+    background-color: green;
     color: #ffffff;
     border: none;
     border-radius: 30px;
@@ -1319,9 +1318,8 @@ html {
 }
 
 .btn-book:hover {
-    background-color: #dcfce7;
-    transform: translateY(-2px);
-    color: #000000;
+    background-color: darkgreen;
+    transform: scale(1.08);
 }
 
 /* Responsive adjustment for mobiles */

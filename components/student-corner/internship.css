@@ -189,7 +189,6 @@ html {
 /* internship-section */
 
 .internship-section {
-  background-color: #F7F5F0;
   padding: 80px 6%;
   font-family: "Roboto", sans-serif;
 }
@@ -218,9 +217,9 @@ html {
 }
 
 .internship-content p {
-  font-size: 15px;
+  font-size: 19px;
   line-height: 1.7;
-  color: #333333;
+  color: black;
   margin-bottom: 20px;
 }
 
@@ -240,7 +239,7 @@ html {
 .internship-list li {
   font-size: 16px;
   font-weight: 500;
-  color: #222222;
+  color: black;
   margin-bottom: 8px;
   line-height: 1.5;
 }
@@ -297,7 +296,7 @@ html {
 
 /* Arrow Buttons */
 .arrow-btn {
-    background-color: #dcfce7;
+    background-color: #14532d;
     border: none;
     width: 45px;
     height: 45px;
@@ -306,7 +305,7 @@ html {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #14532d;
+    color:  white;
     box-shadow: 0 4px 6px rgba(0,0,0,0.04);
     z-index: 10;
     transition: background 0.2s;
@@ -314,18 +313,18 @@ html {
 }
 
 .arrow-btn:hover {
-    background-color: #dcfce7;
+    background-color: green;
 }
 
 /* Partners Logo Track */
 .partners-track {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     width: 100%;
     padding: 0 20px;
     overflow-x: auto;
+    scroll-behavior: smooth;
     scrollbar-width: none;
 }
 
@@ -334,8 +333,8 @@ html {
 }
 
 .partner-item {
-    flex: 1;
-    min-width: 170px;
+    flex: 0 0 180px;
+    min-width: 180px;
     height: 70px;
     display: flex;
     align-items: center;
@@ -882,7 +881,7 @@ html {
 }
 
 .submit-btn {
-  background-color: #166534; /* Deep purple button */
+  background-color: green; /* Deep purple button */
   color:#ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -896,8 +895,8 @@ html {
 }
 
 .submit-btn:hover {
-  background-color: #dcfce7;
-  color: #000000;
+  background-color: darkgreen;
+  transform: translateY(-5px);
 }
 
 /* profile-building-section */
@@ -1086,7 +1085,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 52px;
   font-weight: 500;
-  color: #14532d; /* Deep purple numbers */
+  color: black; /* Deep purple numbers */
   line-height: 1;
   min-width: 150px;
   text-align: left;
@@ -1177,7 +1176,7 @@ html {
 
 .faq-answer p {
     font-size: 15px;
-    color: #374151;
+    color: black;
     line-height: 1.5;
 }
 

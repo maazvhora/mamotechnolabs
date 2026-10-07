@@ -734,12 +734,12 @@ html {
 /* Partners Logo Track */
 .partners-track {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     width: 100%;
     padding: 0 20px;
     overflow-x: auto;
+    scroll-behavior: smooth;
     scrollbar-width: none;
 }
 
@@ -748,8 +748,8 @@ html {
 }
 
 .partner-item {
-    flex: 1;
-    min-width: 170px;
+    flex: 0 0 180px;
+    min-width: 180px;
     height: 70px;
     display: flex;
     align-items: center;
@@ -1176,147 +1176,335 @@ html {
   }
 }
 
-/*full university Section Wrapper */
+/* ── Full University Tie-Ups Section ────────────────────── */
 .university-section {
-    padding: 80px 6%;
-    border-radius: 50px;
+    padding: 95px 6%;
+    background: linear-gradient(180deg, #FDFCF8 0%, #F5F9F4 50%, #FDFCF8 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.university-section::before {
+    content: '';
+    position: absolute;
+    top: 5%;
+    left: -8%;
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle, rgba(34, 197, 94, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.university-section::after {
+    content: '';
+    position: absolute;
+    bottom: 2%;
+    right: -6%;
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, rgba(20, 83, 45, 0.06) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .university-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1300px;
+    gap: 56px;
+    max-width: 1320px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Eyebrows / Badges */
+.uni-tag, .features-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: #eaf8ee;
+    border: 1px solid #bbf7d0;
+    border-radius: 999px;
+    color: #15803d;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    width: fit-content;
+}
+
+.uni-tag i, .features-tag i {
+    font-size: 13px;
+    color: #16a34a;
 }
 
 /* Left Column Styling */
 .uni-left {
-    flex: 1;
-    padding-right: 40px;
+    flex: 1.05;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .uni-title {
+    font-family: "Roboto", sans-serif;
     font-size: 38px;
-    font-weight: 900;
-    color: #16a34a; /* Mint green heading color matching screenshot */
-    line-height: 1.2;
-    margin-bottom: 30px;
-    letter-spacing: -0.5px;
+    font-weight: 800;
+    color: #0f2410;
+    line-height: 1.22;
+    letter-spacing: -0.6px;
+    margin: 0;
+}
+
+.uni-title .highlight-green {
+    color: #16a34a;
+}
+
+.uni-desc {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #4b5563;
+    line-height: 1.6;
+    margin: -4px 0 2px 0;
 }
 
 .uni-cards-wrapper {
     display: flex;
     gap: 20px;
-    margin-bottom: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 10px 4px 22px 4px;
+    scroll-snap-type: x mandatory;
+}
+
+.uni-cards-wrapper::-webkit-scrollbar {
+    display: none;
 }
 
 .uni-card {
-    border-radius: 16px;
+    background: #ffffff;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    border: 1px solid #f1f5f9;
-    flex: 1;
-    max-width: 240px;
+    box-shadow: 0 10px 28px -6px rgba(15, 36, 16, 0.07), 0 2px 6px rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(22, 163, 74, 0.16);
+    flex: 0 0 calc(50% - 10px);
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    position: relative;
+}
+
+.uni-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 22px 40px -8px rgba(22, 163, 74, 0.2), 0 4px 12px rgba(0, 0, 0, 0.04);
+    border-color: #22c55e;
 }
 
 .uni-img-box {
     width: 100%;
-    height: 180px;
+    height: 155px;
+    background: linear-gradient(180deg, #f8fbf8 0%, #ffffff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid #f0f4f0;
+    overflow: hidden;
+    position: relative;
 }
 
 .uni-img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 85%;
+    max-height: 85px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.05));
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.uni-card:hover .uni-img-box img {
+    transform: scale(1.08);
 }
 
 .uni-logo-box {
-    padding: 15px;
+    padding: 16px 14px 18px;
     text-align: center;
-    background-color: #F7F5F0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
 }
 
-.gsfc-text {
-    font-size: 13px;
-    font-weight: 900;
-    letter-spacing: 0.5px;
+.gsfc-text, .parul-text, .uni-name {
+    font-family: "Roboto", sans-serif;
+    font-size: 15.5px;
+    font-weight: 700;
+    color: #0f2410;
+    letter-spacing: -0.2px;
+    line-height: 1.3;
+    display: block;
 }
 
-.parul-text {
+.uni-badge {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #15803d;
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    padding: 3px 10px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Slider Controls & Arrows */
+.uni-slider-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(22, 163, 74, 0.12);
+}
+
+.slider-hint {
+    font-family: "Roboto", sans-serif;
+    font-size: 13.5px;
+    color: #4b5563;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.slider-hint i {
+    color: #16a34a;
     font-size: 14px;
-    font-weight: 900;
 }
 
-/* Slider Arrows */
 .uni-slider-arrows {
     display: flex;
-    gap: 15px;
-    margin-top: 10px;
+    align-items: center;
+    gap: 12px;
 }
 
-.arrow-btn {
-    background-color: transparent;
-    border: none;
-    font-size: 20px;
-    color: #14532d;
+.uni-slider-arrows .arrow-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1.5px solid #bbf7d0;
+    color: #16a34a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
     cursor: pointer;
-    transition: transform 0.2s;
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.1);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.arrow-btn:hover {
-    transform: scale(1.1);
+.uni-slider-arrows .arrow-btn:hover {
+    background-color: #16a34a;
+    border-color: #16a34a;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(22, 163, 74, 0.28);
 }
 
-/* Vertical Dotted Divider */
+.uni-slider-arrows .arrow-btn:active {
+    transform: translateY(0) scale(0.96);
+}
+
+/* Vertical Divider */
 .vertical-divider {
-    width: 1px;
-    background: repeating-linear-gradient(to bottom, #a7f3d0 0, #a7f3d0 6px, transparent 6px, transparent 12px);
+    width: 2px;
+    background: linear-gradient(180deg, transparent 0%, #bbf7d0 15%, #22c55e 50%, #bbf7d0 85%, transparent 100%);
     align-self: stretch;
-    margin: 0 40px;
+    margin: 0 4px;
+    flex-shrink: 0;
+    opacity: 0.8;
 }
 
 /* Right Column Styling */
 .uni-right {
-    flex: 1.2;
+    flex: 1.15;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
 .features-title {
-    font-size: 36px;
-    font-weight: 900;
-    line-height: 1.2;
-    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+    color: #14532d;
+    line-height: 1.25;
     letter-spacing: -0.5px;
+    margin: 0;
 }
 
 .features-desc {
-    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15.5px;
     color: #4b5563;
-    line-height: 1.6;
-    margin-bottom: 30px;
+    line-height: 1.65;
+    margin: 0 0 4px 0;
 }
 
 .features-list {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 11px;
+    padding: 0;
+    margin: 0;
 }
 
 .features-list li {
     display: flex;
     align-items: flex-start;
-    gap: 15px;
-    font-size: 14px;
-    color: #374151;
+    gap: 14px;
+    font-size: 14.5px;
+    color: #1f2937;
     line-height: 1.5;
+    padding: 11px 16px;
+    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid rgba(226, 232, 240, 0.85);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    transition: all 0.25s ease;
+}
+
+.features-list li:hover {
+    background: #fbfdfb;
+    border-color: #86efac;
+    transform: translateX(6px);
+    box-shadow: 0 6px 16px rgba(22, 163, 74, 0.08);
 }
 
 .check-icon {
-    background-color: #22c55e;
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
     color: #ffffff;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1324,19 +1512,58 @@ html {
     font-size: 11px;
     flex-shrink: 0;
     margin-top: 2px;
+    box-shadow: 0 3px 8px rgba(34, 197, 94, 0.35);
+    transition: transform 0.2s ease;
+}
+
+.features-list li:hover .check-icon {
+    transform: scale(1.12);
 }
 
 /* Responsive adjustment */
-@media (max-width: 950px) {
+@media (max-width: 992px) {
     .university-container {
         flex-direction: column;
-        gap: 40px;
+        gap: 48px;
     }
     .uni-left {
         padding-right: 0;
+        width: 100%;
     }
     .vertical-divider {
         display: none;
+    }
+    .uni-right {
+        width: 100%;
+    }
+    .uni-card {
+        flex: 0 0 calc(50% - 10px);
+        min-width: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .university-section {
+        padding: 60px 5%;
+    }
+    .uni-title, .features-title {
+        font-size: 27px;
+        line-height: 1.28;
+    }
+    .uni-card {
+        flex: 0 0 85%;
+        max-width: 85%;
+        min-width: 0;
+    }
+    .features-list li {
+        font-size: 13.5px;
+        padding: 10px 12px;
+        gap: 12px;
+    }
+    .uni-slider-controls {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
     }
 }
 

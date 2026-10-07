@@ -907,7 +907,7 @@ html {
 }
 
 .send-inquiry-btn {
-  background-color: #166534;
+  background-color: green;
   color:#ffffff;
   font-size: 15px;
   font-weight: 700;
@@ -921,9 +921,9 @@ html {
 }
 
 .send-inquiry-btn:hover {
-  background-color: #dcfce7;
-  transform: translateY(-2px);
-  color: #000000;
+  background-color: darkgreen;
+  transform: scale(1.05);
+
 }
 
 /* Responsive design for tablets and mobile */

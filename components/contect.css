@@ -223,7 +223,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 600;
-  color: #16a34a;
+  color: black;
 }
 
 /* Cards Grid Container */
@@ -415,7 +415,7 @@ html {
 }
 
 .send-inquiry-btn {
-  background-color: #166534; /* Deep purple button */
+  background-color: green; /* Deep purple button */
   color:#ffffff;
   font-size: 15px;
   font-weight: 700;
@@ -429,9 +429,8 @@ html {
 }
 
 .send-inquiry-btn:hover {
-  background-color: #dcfce7;
+  background-color: #166534;
   transform: translateY(-2px);
-  color: #000000;
 }
 
 /* Footer Main Wrapper */
